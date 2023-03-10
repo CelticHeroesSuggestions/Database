@@ -82,4 +82,6 @@ INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_tim
 VALUES (12421, 4, 60, 19.25, -10, 57.31, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12422, 4, 60, 31.82, -10, 41.58, "17534,100", 90);
+INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
+VALUES (12423, 4, 60, 32.63, -10, 17.39, "17534,100", 90);
 ```
