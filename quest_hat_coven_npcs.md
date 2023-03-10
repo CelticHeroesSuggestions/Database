@@ -65,9 +65,9 @@ VALUES (12412, 4, 60, 31.72, -10, -76.18, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12413, 4, 60, 22.85, -10, -61.8, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
-VALUES (12414, 4, 60, -41.96, -10, -43.19, "17534,100", 90);
+VALUES (12414, 4, 60, -41.96, 0, -43.19, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
-VALUES (12415, 4, 60, -41.84, -10, -26.27, "17534,100", 90);
+VALUES (12415, 4, 60, -41.84, 0, -26.27, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12416, 4, 60, -3.23, -10, -27.78, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
