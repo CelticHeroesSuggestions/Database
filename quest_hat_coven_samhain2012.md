@@ -86,6 +86,10 @@ INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_tim
 VALUES (12422, 4, 60, 31.82, -10, 41.58, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12423, 4, 60, 32.63, -10, 17.39, "17534,100", 90);
+INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
+VALUES (12424, 5, 60, 11.97, 0, -112.99, "17534,100", 90);
+INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
+VALUES (12425, 5, 60, 10.47, 0, -118.17, "17534,100", 90);
 
 # Quest Zone Updates (needed or the NPC won't give the quest); If you change a witch zone, make sure to check this
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 367;
