@@ -21,7 +21,7 @@ UPDATE ch_live_unitydatadb.shop_stock SET zone_id = 2 WHERE shop_id = 1063;
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (12411, 2, 50, 66.32, 10, -62.74, "stand", "250,1", 1, 10, 50, 0, 0, 0);
 
-# Move their shop from Dustwhiter to Lirs
+# Move their shop from Dustwhither to Lirs
 UPDATE ch_live_unitydatadb.shop SET zone_id = 2 WHERE npc_id = 250;
 UPDATE ch_live_unitydatadb.shop_stock SET zone_id = 2 WHERE shop_id = 1064;
 
