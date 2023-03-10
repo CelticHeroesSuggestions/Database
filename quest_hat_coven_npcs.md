@@ -37,7 +37,7 @@ VALUES (12406, 5, 50, 11.22, 34, -113.9, "stand", "226,1", 1, 260, 50, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (12407, 2, 50, 210.71, 34, -38.75, "stand", "227,1", 1, 170, 50, 0, 0, 0);
 
-# Pumpkins
+# Pumpkin Spawns
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12401, 4, 60, 95.01, -10, -78.49, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
@@ -84,4 +84,20 @@ INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_tim
 VALUES (12422, 4, 60, 31.82, -10, 41.58, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12423, 4, 60, 32.63, -10, 17.39, "17534,100", 90);
+
+# Quest Zone Updates (needed or the NPC won't give the quest); If you change a witch zone, make sure to check this
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 367
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 368
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 369
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 371
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 4 WHERE quest_id = 372
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 4 WHERE quest_id = 373
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 4 WHERE quest_id = 374
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 4 WHERE quest_id = 375
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 9 WHERE quest_id = 376
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 409
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 410
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 411
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 412
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 2 WHERE quest_id = 413
 ```
