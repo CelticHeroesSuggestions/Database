@@ -1,8 +1,10 @@
-What: Spawn points for the Samhain 2012 event hat quest NPCs and items.
-Why: This is a legacy event hat quest that is of high demand would make a nice re-entrance to the game.
-Table: `ch_live_unitydatadb.spawn_points`, `ch_live_unitydatadb.item_spawns`.
-Notes: I placed the NPCs roughly where the instructions say they are (except Anika, who is in Lirs). I also limited the pumpkins to Crookback Hollow instead of Lirs Reach, as I think having the pumpkins together in a less-used area would be a nicer experience.
-Changes:
+# Coven Hats
+
+* What: Spawn points for the Samhain 2012 event hat quest NPCs and items.
+* Why: This is a legacy event hat quest that is of high demand would make a nice re-entrance to the game.
+* Table: `ch_live_unitydatadb.spawn_points`, `ch_live_unitydatadb.item_spawns`.
+* Notes: I placed the NPCs roughly where the instructions say they are (except Anika, who is in Lirs). I also limited the pumpkins to Crookback Hollow instead of Lirs Reach, as I think having the pumpkins together in a less-used area would be a nicer experience. Also, I labeled the spawn IDS in the `124XX` series: year 2012, and Samhain is event 4 in the usual series (Ostara, Birthday, Beltane, Samhain, Yuletide).
+* Changes:
 ```
 # Remove prerequisites as they are old and no longer available
 DELETE FROM ch_live_unitydatadb.quest_prerequesits WHERE quest_id=367
