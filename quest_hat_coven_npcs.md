@@ -39,6 +39,8 @@ VALUES (12407, 2, 50, 210.71, 34, -38.75, "stand", "227,1", 1, 170, 50, 0, 0, 0)
 
 # Pumpkin Spawns
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
+VALUES (12400, 4, 60, 86.24, -10, -88.16, "17534,100", 90);
+INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12401, 4, 60, 95.01, -10, -78.49, "17534,100", 90);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12402, 4, 60, 130.57, -10, -45.02, "17534,100", 90);
