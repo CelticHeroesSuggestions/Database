@@ -11,6 +11,7 @@ INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_t
 VALUES (12500, 93, 50, -10.27, 40, -74.29, "stand", "289,1", 1, 340, 12, 0, 0, 0);
 
 # Move his shop and quest to Farcrag castle
+UPDATE ch_live_unitydatadb.shop SET zone_id = 93 WHERE shop_id = 11004;
 UPDATE ch_live_unitydatadb.shop_stock SET zone_id = 93 WHERE shop_id = 11004;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 463;
 
