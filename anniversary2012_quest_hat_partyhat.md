@@ -3,7 +3,7 @@
 * What: Spawn points for the Anniversary 2012 event hat quest NPCs and items.
 * Why: This is a legacy event hat quest that is of high demand would make a nice re-entrance to the game.
 * Table: `ch_live_unitydatadb.spawn_points`, `ch_live_unitydatadb.item_spawns`.
-* Notes: I placed the NPCs roughly where the instructions say they are. The green presents are in Farcrag Castle (by the fountain), and the red presents are in Lirs (around the Tavern). Since lots of hat quests use presents, this quest is set to (inauthentically) use the Anniversary 2013 presents.
+* Notes: I placed the NPCs roughly where the instructions say they are. The green presents are in Farcrag Castle (by the fountain), and the red presents are in Lirs (around the Tavern). Since lots of hat quests use presents, this quest is set to (inauthentically) use the Anniversary 2013 presents. ALSO, due to Hamish the Hatter being recycled for the 2013 anniversary hat quest (party crowns), this quest is not available unless the hatman's XML file is modified.
 * Changes:
 ```
 # Hamish the Hatter
