@@ -10,7 +10,7 @@
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
 VALUES (12530, 9, 30, -0.35, 0, 51.42, "22617,1", 45);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
-VALUES (12531, 9, 30, -12.41, 0, 44.09, "22619,50", 45);
+VALUES (12531, 9, 30, -12.41, 0, 44.09, "22619,1", 45);
 INSERT INTO ch_live_unitydatadb.item_spawns (item_spawn_id, zone_id, respawn_time, position_x, position_y, position_z, item_list, max_respawn_time)
-VALUES (12532, 9, 30, -13.25, 0, 31.81, "22620,50", 45);
+VALUES (12532, 9, 30, -13.25, 0, 31.81, "22620,1", 45);
 ```
