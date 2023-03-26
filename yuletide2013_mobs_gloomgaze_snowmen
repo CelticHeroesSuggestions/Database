@@ -1,0 +1,30 @@
+# Yuletide 2013: Gloomgaze and Snowmen and Frost Spirits
+
+* What: Spawn points for the Yuletide 2013 Gloomgaze, Snowmen, and Frost Spirits
+* Why: Gloomgaze dropped a cool consumable, and the snowmen dropped snowballs. It would be cool to introduce them again.
+* Table: `ch_live_unitydatadb.spawn_points`.
+* Notes: I placed Gloomgaze near Highshore where he originally spawned. I placed three snowmen around Lirs Reach. I placed the Frost Spirits near Gloomgaze (inauthentic, but it's nice keeping the themes together).
+* Changes:
+```
+# Gloomgaze
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13501, 2, 600, -147.87, 0, -18.94, "random 15 0 0 1", "100139,1", 1, 0, 660, 0, 0, 0);
+
+# Snowmen
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13502, 2, 15, -157.2, 0, 49.39, "stand", "100141,1", 1, 260, 30, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13503, 2, 15, -232.05, 0, 3.94, "stand", "100141,1", 1, 260, 30, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13504, 2, 15, 263.08, 0, -263.33, "stand", "100141,1", 1, 165, 30, 0, 0, 0);
+
+# Frost Spirits
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13505, 2, 600, -147.87, 0, -18.94, "random 15 0 0 1", "70678,1", 1, 0, 660, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13506, 2, 600, -147.87, 0, -18.94, "random 15 0 0 1", "70678,1", 1, 0, 660, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13507, 2, 600, -147.87, 0, -18.94, "random 15 0 0 1", "70678,1", 1, 0, 660, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (13508, 2, 600, -147.87, 0, -18.94, "random 15 0 0 1", "70678,1", 1, 0, 660, 0, 0, 0);
+```
