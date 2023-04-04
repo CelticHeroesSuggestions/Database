@@ -2,7 +2,7 @@
 
 * What: NPC for rares that are unattainable or infeasible (e.g., Bloodlust Helm, Golden Camouflage Charm, Kites, plat items). To our understanding, conversations use an XML format, to make it easy for DECA Games we have tried to replicate that.
 * Why: These items do not make a significant impact on the endgame, but could help newer players.
-* Table: `ch_live_unitydatadb.spawn_points`.
+* Table: various.
 * Notes: I named the NPC Regenleif just out of convenience, but any Celtic name would fit. I placed the NPC in Lir's Reach, by the Tavern.
 * Changes:
 
