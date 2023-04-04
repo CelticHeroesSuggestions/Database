@@ -56,8 +56,8 @@ Add a new Mob (patchserver): `mob_data.txt`
 
 Add a new Mob (server):
 ```
-INSERT INTO ch_live_unitydatadb.mob_templates (mob_template_id, mob_name, aggro_range, follow_range, faction_id, opinion_base, level, hitpoints, loot_table, min_coins, max_coins, kills_per_level, conversation_id, attack, defence, attack_speed, energy, skill_list, radius, armour_value, model_scale, damage_list, resistance_list, mob_power, max_attack_range, mob_race, missile_speed, report_back_time, ai_template_id, xp, num_drops, perm_status_effects, blocks_attacks, avoidance_ratings, spot_hidden, immunity_list, damage_reduction_list, no_ability_test, mob_type)
-200001, Regenleif, 0, 0, 1, 51, 0, 100, , 0, 0, , 1001, 0, 0, 0, 0, , .3, 5, 1, , , 0, 1, 20, 0, 0, 0, 0, 1, 0, , 0, 0, 7,1.00, 0, 0
+INSERT INTO ch_live_unitydatadb.mob_templates (mob_template_id, mob_name, aggro_range, follow_range, faction_id, opinion_base, level, hitpoints, loot_table, min_coins, max_coins, kills_per_level, conversation_id, attack, defence, attack_speed, energy, skill_list, radius, armour_value, model_scale, damage_list, resistance_list, mob_power, max_attack_range, mob_race, missile_speed, report_back_time, ai_template_id, xp, num_drops, perm_status_effects, blocks_attacks, avoidance_ratings, spot_hidden, immunity_list, damage_reductions_list, no_ability_test, mob_type)
+VALUES (200001, 'Regenleif', 0, 0, 1, 51, 0, 100, NULL, 0, 0, NULL, 1001, 0, 0, 0, 0, NULL, .3, 5, 1, NULL, NULL, 0, 1, 20, 0, 0, 0, 0, 1, NULL, 0, NULL, 0, NULL, '7,1.00', 0, 0);
 
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (100001, 2, 20, 233.65, 5, -245.33, 'stamd', '200001,1', 1, 160, 90, 0, 0, 0);
