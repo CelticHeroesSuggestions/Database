@@ -93,16 +93,39 @@ Add a new Dialogue (patchserver): `cv_leif_difinitus.xml`
 
 Add a new Model (patchserver): `modelids_list.txt`: this creates a new asset model using the DG armor as a base and Dark DG textures
 ```
+# Druid Robe
 2,100001,2,0,0,1,0,0
 1519,3767,1,0,2,0,1,699,3766,2,111,0.5
 1542,3781,2,0,2,0,1,699,3780,2,111,0.5
+# Druid Legs
+3,100003,2,0,0,1,0,0
+1517,3758,1,0,2,0,1,699,3757,2,111,0.5
+1539,3758,2,0,2,0,1,699,3757,2,111,0.5
+# Druid Helm
+1,100004,2,0,0,1,0,0
+1520,3758,1,0,2,0,1,699,3757,2,111,0.5
+1541,3769,2,0,2,0,1,699,3768,2,111,0.5
+# Druid Boots
+4,100005,2,0,0,1,0,0
+1518,3752,1,0,2,0,1,699,3751,2,111,0.5
+1540,3752,2,0,2,0,1,699,3751,2,111,0.5
+# Druid Gloves
+6,100006,2,0,0,1,0,0
+1516,3754,1,0,2,0,1,699,3753,2,111,0.5
+1538,3754,2,0,2,0,1,699,3753,2,111,0.5
 ```
 
 Add a new Item (patchserver): `item_list.txt`
 Note: `ID|?|armor|slot:2=robe|weight|atkspeed|itemsubtype|3dmodelid|iconid|?|?|?||3^heat;4^cold;5^magic||classreq:2=druid|skillid|skilllvl|attackrange|missilespeed|reportbacktimemale|reportbacktimefemale|blocksslots|procskillid|procskilllvl|procskillchance|equipskillid|equipskilllevel|uniqueid:0|boe:1=yes||1^dex;2^foc;3^vit|10^natmagic||skill_bonus?|max_charges?|destroy_on_no_charges?|?|?|?|1^spellevade;3^woundevade||`
 ```
 ...
-100001|0|40|2|15|0|4|15796|7914|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
+# Druid items
+100001|0|40|2|15|0|4|100001|9417|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
+100002|0|40|2|15|0|4|100001|9412|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
+100003|0|40|3|15|0|4|100003|9416|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
+100004|0|40|1|15|0|4|100004|9415|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
+100005|0|40|4|15|0|4|100005|9413|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
+100006|0|40|6|15|0|4|100006|9414|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
 (end of file)
 ```
 
@@ -110,6 +133,18 @@ Add a new Item (patchserver): `text.db`
 ```
 INSERT INTO item_templates (item_id, item_name, item_description)
 VALUES (100001, "Shadowed Doch Gul Robe of Myth", "This Robe was hoarded by Crom Cruach himself, out of fear for the devastating power it holds. This doesn't break Exalted Aura, nor Doch Gul Aura, and when worn as a full set also gives up to +720 healing to Natures Touch and +1080 damage to Lightning Strike.");
+
+INSERT INTO item_templates (item_id, item_name, item_description)
+VALUES (100003, "Shadowed Doch Gul Leggings of Myth", "These Leggings were hoarded by Crom Cruach himself, out of fear for the devastating power it holds. This doesn't break Exalted Aura, nor Doch Gul Aura, and when worn as a full set also gives up to +720 healing to Natures Touch and +1080 damage to Lightning Strike.");
+
+INSERT INTO item_templates (item_id, item_name, item_description)
+VALUES (100004, "Shadowed Doch Gul Circlet of Myth", "This Circlet was hoarded by Crom Cruach himself, out of fear for the devastating power it holds. This doesn't break Exalted Aura, nor Doch Gul Aura, and when worn as a full set also gives up to +720 healing to Natures Touch and +1080 damage to Lightning Strike.");
+
+INSERT INTO item_templates (item_id, item_name, item_description)
+VALUES (100005, "Shadowed Doch Gul Sandals of Myth", "These Sandals were hoarded by Crom Cruach himself, out of fear for the devastating power it holds. This doesn't break Exalted Aura, nor Doch Gul Aura, and when worn as a full set also gives up to +720 healing to Natures Touch and +1080 damage to Lightning Strike.");
+
+INSERT INTO item_templates (item_id, item_name, item_description)
+VALUES (100006, "Shadowed Doch Gul Wristguards of Myth", "These Wristguards were hoarded by Crom Cruach himself, out of fear for the devastating power it holds. This doesn't break Exalted Aura, nor Doch Gul Aura, and when worn as a full set also gives up to +720 healing to Natures Touch and +1080 damage to Lightning Strike.");
 ```
 
 Add a new Conversation (patchserver): `conversation_lookup.txt`
@@ -131,6 +166,19 @@ Add a new Item (server):
 ```
 INSERT INTO ch_live_unitydatadb.item_templates (item_id, item_name, stackable, armour, equipment_slot, buy_price, sell_price, weight, attack_speed, item_sub_type, no_trade, damage_list, bonus_list, requirement_list, class_requirement_list, skill_id, skill_level, attack_range, missile_speed, report_back_time_male, report_back_time_female, blocks_slots, proc_skill_id, proc_skill_level, proc_skill_chance, equip_skill_id, equip_skill_level, unique_id, bind_on_equip, stat_bonus, ability_bonus, skill_bonus, max_charges, destroy_on_no_charges, avoidance_bonuses, immunity_list, damage_reductions_list)
 VALUES (100001, 'Shadowed Doch Gul Robe of Myth', 0, 40, 2, 0, 0, 15, 0, 4, 1, NULL, '3^300;4^300;5^300', NULL, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '1^300;2^1000;3^300', '10^5000', NULL, 0, 0, '1^3000;3^3000', NULL, NULL);
+
+INSERT INTO ch_live_unitydatadb.item_templates (item_id, item_name, stackable, armour, equipment_slot, buy_price, sell_price, weight, attack_speed, item_sub_type, no_trade, damage_list, bonus_list, requirement_list, class_requirement_list, skill_id, skill_level, attack_range, missile_speed, report_back_time_male, report_back_time_female, blocks_slots, proc_skill_id, proc_skill_level, proc_skill_chance, equip_skill_id, equip_skill_level, unique_id, bind_on_equip, stat_bonus, ability_bonus, skill_bonus, max_charges, destroy_on_no_charges, avoidance_bonuses, immunity_list, damage_reductions_list)
+VALUES (100003, 'Shadowed Doch Gul Leggings of Myth', 0, 40, 3, 0, 0, 15, 0, 4, 1, NULL, '3^300;4^300;5^300', NULL, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '1^300;2^1000;3^300', '10^5000', NULL, 0, 0, '1^3000;3^3000', NULL, NULL);
+
+INSERT INTO ch_live_unitydatadb.item_templates (item_id, item_name, stackable, armour, equipment_slot, buy_price, sell_price, weight, attack_speed, item_sub_type, no_trade, damage_list, bonus_list, requirement_list, class_requirement_list, skill_id, skill_level, attack_range, missile_speed, report_back_time_male, report_back_time_female, blocks_slots, proc_skill_id, proc_skill_level, proc_skill_chance, equip_skill_id, equip_skill_level, unique_id, bind_on_equip, stat_bonus, ability_bonus, skill_bonus, max_charges, destroy_on_no_charges, avoidance_bonuses, immunity_list, damage_reductions_list)
+VALUES (100004, 'Shadowed Doch Gul Circlet of Myth', 0, 40, 1, 0, 0, 15, 0, 4, 1, NULL, '3^300;4^300;5^300', NULL, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '1^300;2^1000;3^300', '10^5000', NULL, 0, 0, '1^3000;3^3000', NULL, NULL);
+
+INSERT INTO ch_live_unitydatadb.item_templates (item_id, item_name, stackable, armour, equipment_slot, buy_price, sell_price, weight, attack_speed, item_sub_type, no_trade, damage_list, bonus_list, requirement_list, class_requirement_list, skill_id, skill_level, attack_range, missile_speed, report_back_time_male, report_back_time_female, blocks_slots, proc_skill_id, proc_skill_level, proc_skill_chance, equip_skill_id, equip_skill_level, unique_id, bind_on_equip, stat_bonus, ability_bonus, skill_bonus, max_charges, destroy_on_no_charges, avoidance_bonuses, immunity_list, damage_reductions_list)
+VALUES (100005, 'Shadowed Doch Gul Sandals of Myth', 0, 40, 4, 0, 0, 15, 0, 4, 1, NULL, '3^300;4^300;5^300', NULL, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '1^300;2^1000;3^300', '10^5000', NULL, 0, 0, '1^3000;3^3000', NULL, NULL);
+
+INSERT INTO ch_live_unitydatadb.item_templates (item_id, item_name, stackable, armour, equipment_slot, buy_price, sell_price, weight, attack_speed, item_sub_type, no_trade, damage_list, bonus_list, requirement_list, class_requirement_list, skill_id, skill_level, attack_range, missile_speed, report_back_time_male, report_back_time_female, blocks_slots, proc_skill_id, proc_skill_level, proc_skill_chance, equip_skill_id, equip_skill_level, unique_id, bind_on_equip, stat_bonus, ability_bonus, skill_bonus, max_charges, destroy_on_no_charges, avoidance_bonuses, immunity_list, damage_reductions_list)
+VALUES (100006, 'Shadowed Doch Gul Wristguards of Myth', 0, 40, 6, 0, 0, 15, 0, 4, 1, NULL, '3^300;4^300;5^300', NULL, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '1^300;2^1000;3^300', '10^5000', NULL, 0, 0, '1^3000;3^3000', NULL, NULL);
+
 ```
 
 
