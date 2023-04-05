@@ -91,8 +91,15 @@ Add a new Dialogue (patchserver): `cv_leif_difinitus.xml`
 </xml>
 ```
 
+Add a new Model (patchserver): `modelids_list.txt`: this creates a new asset model using the DG armor as a base and Dark DG textures
+```
+2,100001,2,0,0,1,0,0
+1519,3767,1,0,2,0,1,699,3766,2,111,0.5
+1542,3781,2,0,2,0,1,699,3780,2,111,0.5
+```
+
 Add a new Item (patchserver): `item_list.txt`
-Note: `ID|?|armor|slot:2=robe|weight|atkspeed|itemsubtype|?|?|?|?|?||3^heat;4^cold;5^magic||classreq:2=druid|skillid|skilllvl|attackrange|missilespeed|reportbacktimemale|reportbacktimefemale|blocksslots|procskillid|procskilllvl|procskillchance|equipskillid|equipskilllevel|uniqueid:0|boe:1=yes||1^dex;2^foc;3^vit|10^natmagic||skill_bonus?|max_charges?|destroy_on_no_charges?|?|?|?|1^spellevade;3^woundevade||`
+Note: `ID|?|armor|slot:2=robe|weight|atkspeed|itemsubtype|3dmodelid|iconid|?|?|?||3^heat;4^cold;5^magic||classreq:2=druid|skillid|skilllvl|attackrange|missilespeed|reportbacktimemale|reportbacktimefemale|blocksslots|procskillid|procskilllvl|procskillchance|equipskillid|equipskilllevel|uniqueid:0|boe:1=yes||1^dex;2^foc;3^vit|10^natmagic||skill_bonus?|max_charges?|destroy_on_no_charges?|?|?|?|1^spellevade;3^woundevade||`
 ```
 ...
 100001|0|40|2|15|0|4|15796|7914|7909|1|76||3^300;4^300;5^300||2|0|0|0|-1|0|0|0|0|0|0|0|0|0|0||1^300;2^1000;3^300|10^5000||9999|0|-1|0|0|1|1^3000;3^3000||
