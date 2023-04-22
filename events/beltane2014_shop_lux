@@ -3,7 +3,7 @@
 * What: Spawn point for the Beltane 2014 event shop.
 * Why: This shop was very popular and would be a nice revival for the game.
 * Table: `ch_live_unitydatadb.spawn_points`, `ch_live_unitydatadb.shop_stock`.
-* Notes: I placed the NPC at Stonevale Farm, to give more content there.
+* Notes: I placed the NPC at Stonevale's Northern Woods, to give more content there.
 * Changes:
 ```
 # Rowan of Ardmair (luxury shop)
