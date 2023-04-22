@@ -8,7 +8,7 @@
 ```
 # The Green Man
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (14302, 3, 50, 189.4, 0, 170.55, "stand", "100221,1", 1, 273, 12, 0, 0, 0);
+VALUES (14301, 3, 50, 189.4, 0, 170.55, "stand", "100221,1", 1, 273, 12, 0, 0, 0);
 
 # Move the quests to Stonevale
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1436;
