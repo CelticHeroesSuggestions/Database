@@ -150,7 +150,7 @@ VALUES (100006, "Shadowed Doch Gul Wristguards of Myth", "These Wristguards were
 Add a new Conversation (patchserver): `conversation_lookup.txt`
 ```
 ...
-conv 1001 cv_leif_difinitus
+conv 1002 cv_leif_difinitus
 END_FILE
 ```
 
