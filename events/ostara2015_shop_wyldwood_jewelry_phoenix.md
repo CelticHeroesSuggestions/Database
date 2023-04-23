@@ -8,9 +8,9 @@
 ```
 # Gayle the Hunter (jewelry trader)
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15101, 3, 50, 28.52, 40, -83.64, "stand", "878,1", 1, 40, 12, 0, 0, 0);
+VALUES (15101, 3, 50, 90.32, 40, -67.50, "stand", "878,1", 1, 340, 12, 0, 0, 0);
 
 # Raghnall the Hunter (phoenix mount trader)
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15102, 3, 50, 30.22, 40, -83.42, "stand", "879,1", 1, 340, 12, 0, 0, 0);
+VALUES (15102, 3, 50, 92.16, 40, -68.80, "stand", "879,1", 1, 300, 12, 0, 0, 0);
 ```
