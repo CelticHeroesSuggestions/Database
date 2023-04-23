@@ -17,5 +17,7 @@ VALUES (15503, 93, 50, -2.38, 0, -36.65, "stand", "101130,1", 1, 135, 12, 0, 0, 
 
 # His quest is already in Farcrag, so no need to move it
 
+# TODO: Fix dialogue on the quests
+
 # TODO: need a way to obtain Cranfir Crackers (57378), originally from SlateGrit mobs (138921-138931, 140021-140023, 140038, 140040)
 ```
