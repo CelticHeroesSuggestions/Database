@@ -11,7 +11,6 @@ INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_t
 VALUES (16100, 3, 50, 43.12, 0, -37.32, "stand", "101162,1", 1, 135, 12, 0, 0, 0);
 
 # move his quests to stonevale
-
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1738;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1739;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1740;
@@ -34,5 +33,29 @@ UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1756;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1757;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1758;
 
-# TODO: Add snake spawns, maybe change the snake loot table to include the other snake hat quest items (Phyrigian)
+# spawn the snakes
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16110, 3, 10, 52.74, 0, -31.39, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16111, 3, 10, 52.74, 0, -31.39, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16112, 3, 10, 52.74, 0, -31.39, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16113, 3, 10, 52.74, 0, -31.39, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16114, 3, 10, 52.74, 0, -31.39, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16115, 3, 10, 59.47, 0, -37.25, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16116, 3, 10, 59.47, 0, -37.25, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16117, 3, 10, 59.47, 0, -37.25, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16118, 3, 10, 59.47, 0, -37.25, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16119, 3, 10, 59.47, 0, -37.25, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
+
+INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (16120, 3, 10, 57.33, 0, -34.68, "random 10 0 0 1", "101177,1;101178,1;101179,1;101180,1", 1, 45, 15, 0, 0, 0);
 ```
