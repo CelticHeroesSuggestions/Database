@@ -14,11 +14,6 @@ VALUES (15101, 3, 50, 90.32, 40, -67.50, "stand", "878,1", 1, 340, 12, 0, 0, 0);
 UPDATE ch_live_unitydatadb.shop SET zone_id = 3 WHERE shop_id = 1081;
 UPDATE ch_live_unitydatadb.shop_stock SET zone_id = 3 WHERE shop_id = 1081;
 
-# Raghnall the Hunter (phoenix mount trader)
-INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15102, 3, 50, 92.16, 40, -68.80, "stand", "879,1", 1, 300, 12, 0, 0, 0);
+# Raghnall the Hunter (phoenix mount trader) is reused for the 2016 shop, so spawn via that script instead
 
-# Move his shop to Stonevale
-UPDATE ch_live_unitydatadb.shop SET zone_id = 3 WHERE shop_id = 15025;
-UPDATE ch_live_unitydatadb.shop_stock SET zone_id = 3 WHERE shop_id = 15025;
 ```
