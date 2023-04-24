@@ -10,13 +10,13 @@ INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_t
 VALUES (15502, 93, 50, 0.47, 0, -36.54, "stand", "140025,1", 1, 225, 12, 0, 0, 0);
 
 # move her quests to Farcrag
-UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 2342;
-UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 2343;
-UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 2344;
-UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 2345;
-UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 2346;
-UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 2347;
-UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 2348;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 2342;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 2343;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 2344;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 2345;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 2346;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 2347;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 2348;
 
 
 # Jalen Gaylewynd (eagle crest quest)
