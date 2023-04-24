@@ -17,11 +17,11 @@ UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1994;
 
 # Spawns for Faerie of Dust, Faerie of Grime, Faerie of Ashes, and Trasgar of Cinereal
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15310, 3, 15, 77.78, 0, -101.55, "random 10 0 0 1", "138422,1", 1, 45, 30, 0, 0, 0);
+VALUES (15310, 3, 10, 77.78, 0, -101.55, "random 10 0 0 1", "138422,1", 1, 45, 20, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15311, 3, 15, 52.78, 0, -105.74, "random 10 0 0 1", "138423,1", 1, 45, 30, 0, 0, 0);
+VALUES (15311, 3, 10, 52.78, 0, -105.74, "random 10 0 0 1", "138423,1", 1, 45, 20, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15312, 3, 15, 44.45, 0, -89.67, "random 10 0 0 1", "138424,1", 1, 45, 30, 0, 0, 0);
+VALUES (15312, 3, 10, 44.45, 0, -89.67, "random 10 0 0 1", "138424,1", 1, 45, 20, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (15313, 3, 15, 60.54, 0, -66.35, "stand", "138421,1", 1, 0, 30, 0, 0, 0);
 
