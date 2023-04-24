@@ -11,6 +11,10 @@ INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_t
 VALUES (16100, 3, 50, 43.12, 0, -37.32, "stand", "101162,1", 1, 135, 12, 0, 0, 0);
 
 # move his quests to stonevale
+
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1738;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1739;
+UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1740;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1741;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1742;
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 3 WHERE quest_id = 1743;
