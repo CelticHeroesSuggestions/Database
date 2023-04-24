@@ -8,7 +8,7 @@
 ```
 # Caitlin the Hunter (jewelry)
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (16101, 3, 50, 45.42, 0, -38.17, "stand", "101540,1", 1, 180, 12, 0, 0, 0);
+VALUES (16101, 3, 50, 45.42, 0, -38.17, "stand", "896,1", 1, 180, 12, 0, 0, 0);
 
 # move her shop to Stonevale
 UPDATE ch_live_unitydatadb.shop SET zone_id = 3 WHERE shop_id = 1098;
