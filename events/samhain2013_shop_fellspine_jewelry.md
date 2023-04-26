@@ -1,4 +1,4 @@
-# Samhain 2013: Fellspine Shop
+# Samhain 2013: Fellspine and Jewelry Shop
 
 * What: Spawn point for the Samhain 2011 event shop.
 * Why: This shop was very popular and would be a nice revival for the game.
