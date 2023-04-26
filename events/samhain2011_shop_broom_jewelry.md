@@ -3,11 +3,13 @@
 * What: Spawn points for the Halloween 2011 event shops.
 * Why: These shops were very popular and would be a nice revival for the game.
 * Table: `ch_live_unitydatadb.spawn_points`, `ch_live_unitydatadb.shop`, `ch_live_unitydatadb.shop_stock`.
-* Notes: I placed the NPC in Farcrag Castle parapets (next to the to give more content there.
+* Notes: I use the Malazor the Warlock NPC (Samhain 2013 -- reaper ring shop) to concentrate valuable halloween luxury items.
 * Changes:
 ```
 
-# The shops were removed from the database for whatever reason, so adding them to Malazor the Warlock (2013 Samhain)
+# The shops and associated NPCs were removed from the database for whatever reason, and could not find what the original NPCs were named, so I am adding them to Malazor the Warlock (2013 Samhain)
+
+# See the `samhain2012_shop_fellspine_jewelry` to spawn Malazor the Warlock
 
 # skull pendants
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
@@ -72,12 +74,4 @@ INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_lev
 VALUES (12000, 93, 17538, -1, 38);
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
 VALUES (12000, 93, 17537, -1, 37);
-
-# spawn the NPC in farcrag, next to the novelty trainer
-INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (11400, 93, 50, 57.09, 40, -79.58, "stand", "100006,1", 1, 275, 12, 0, 0, 0);
-
-# make the shop accessible from this NPC
-UPDATE ch_live_unitydatadb.shop SET npc_id = 100006 WHERE shop_id = 12000;
-
 ```
