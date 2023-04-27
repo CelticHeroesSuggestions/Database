@@ -81,7 +81,7 @@
 <choiceGoto>OPEN_QUEST_GRAND</choiceGoto>
 </choice>
 <choice>
-<choiceOptions>[Q]</choiceOptions>
+<choiceOptions></choiceOptions>
 <choiceText>I heard you like pumpkins...</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>OPEN_QUEST_HALLOWS</choiceGoto>
