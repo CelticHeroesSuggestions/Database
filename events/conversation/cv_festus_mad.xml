@@ -18,10 +18,10 @@
 <startGoto>GOT_STUFF</startGoto>
 </start>
 
-<start>
+<!-- <start>
 <startCondition>STAGE_AVAILABLE 96 1</startCondition>
 <startGoto>GOT_STUFF_HALLOWS</startGoto>
-</start>
+</start> -->
 
 <start>
 <startCondition>STAGE_AVAILABLE 96 2</startCondition>
@@ -75,12 +75,14 @@
 <choiceGoto>QUEST</choiceGoto>
 </choice>
 <choice>
+<choiceCondition>QUEST_AVAILABLE 408</choiceCondition>
 <choiceOptions>[Q]</choiceOptions>
 <choiceText>Think bigger...</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>OPEN_QUEST_GRAND</choiceGoto>
 </choice>
 <choice>
+<choiceCondition>QUEST_AVAILABLE 96</choiceCondition>
 <choiceOptions></choiceOptions>
 <choiceText>I heard you like pumpkins...</choiceText>
 <choiceAction> </choiceAction>
@@ -247,7 +249,8 @@
 <choiceGoto>QUEST</choiceGoto>
 </choice>
 <choice>
-<choiceOptions>[C]</choiceOptions>
+<choiceOptions></choiceOptions>
+<choiceCondition>QUEST_AVAILABLE 96</choiceCondition>
 <choiceText>I heard you like pumpkins...</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>OPEN_QUEST_HALLOWS</choiceGoto>
