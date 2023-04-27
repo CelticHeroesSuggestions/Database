@@ -7,11 +7,11 @@
 <startGoto>GOT_GRAND</startGoto>
 </start>
 
-<start>
+<!--<start>
 <startCondition>QUEST_AVAILABLE 408</startCondition>
 <startCondition>HAVE_ITEM 21968 1</startCondition>
 <startGoto>OPEN_QUEST_GRAND</startGoto>
-</start>
+</start> -->
 
 <start>
 <startCondition>STAGE_AVAILABLE 407 4</startCondition>
@@ -46,10 +46,53 @@
 <startGoto>OPEN_QUEST_BOTH</startGoto>
 </start>
 
-<start>
+<!-- <start>
 <startCondition>QUEST_AVAILABLE 407</startCondition>
 <startGoto>OPEN_QUEST</startGoto>
+</start> -->
+
+<!--
+<start>
+<startCondition>QUEST_COMPLETE 96</startCondition>
+<startGoto>POSTCOMP</startGoto>
+</start>-->
+
+
+<!--
+<start>
+<startCondition> </startCondition>
+<startGoto></startGoto>
 </start>
+-->
+
+<line>
+<lineTag>OPEN_QUEST</lineTag>
+<lineText>It's natural for a mage of my level of intellect and brilliance to be doubted - but to be laughed at is an insult I cannot stand! They called me batty, [class] - insane! I'll show them batty, I'll make a weapon that fires bats that bite people with their tiny teeth! Oh! Did someone say "pumpkin"?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Cane of Bats</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Think bigger...</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_GRAND</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>I heard you like pumpkins...</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_HALLOWS</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
 
 <!-- Added in the Wand of Hallows quest-->
 <line>
@@ -111,7 +154,7 @@
 </line>
 
 <line>
-<lineTag>CURRENT_HALLOWS``</lineTag>
+<lineTag>CURRENT_HALLOWS</lineTag>
 <lineText>To make the Wand of Hallows I need five Pumpleroot Stalks - you can get those from Lesser Pumpleroots - and a single Pumpleroot Heart. You can only get a Pumpleroot Heart from Lord Pumpleroot, the lord of the pumpkins himself.</lineText>
 <choice>
 <choiceOptions>[X]</choiceOptions>
@@ -127,31 +170,6 @@
 <choice>
 <choiceOptions>[X]</choiceOptions>
 <choiceText>Farewell.</choiceText>
-<choiceAction> </choiceAction>
-<choiceGoto>-1</choiceGoto>
-</choice>
-</line>
-
-
-
-<line>
-<lineTag>OPEN_QUEST</lineTag>
-<lineText>It's natural for a mage of my level of intellect and brilliance to be doubted - but to be laughed at is an insult I cannot stand! They called me batty, [class] - insane! I'll show them batty, I'll make a weapon that fires bats that bite people with their tiny teeth! Oh! Did someone say "pumpkin"?</lineText>
-<choice>
-<choiceOptions>[Q]</choiceOptions>
-<choiceText>The Cane of Bats</choiceText>
-<choiceAction> </choiceAction>
-<choiceGoto>QUEST</choiceGoto>
-</choice>
-<choice>
-<choiceOptions>[Q]</choiceOptions>
-<choiceText>I heard you like pumpkins...</choiceText>
-<choiceAction> </choiceAction>
-<choiceGoto>OPEN_QUEST_HALLOWS</choiceGoto>
-</choice>
-<choice>
-<choiceOptions>[X]</choiceOptions>
-<choiceText>Goodbye.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -227,6 +245,12 @@
 <choiceText>Cane of Bats.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>QUEST</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>I heard you like pumpkins...</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_HALLOWS</choiceGoto>
 </choice>
 <choice>
 <choiceOptions>[X]</choiceOptions>
@@ -315,5 +339,24 @@
 <choiceGoto>-1</choiceGoto>
 </choice>
 </line>
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
 
 </xml>
