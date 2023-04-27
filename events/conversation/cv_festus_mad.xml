@@ -75,7 +75,7 @@
 <choiceGoto>QUEST</choiceGoto>
 </choice>
 <choice>
-<choiceOptions>[Q]</choiceOptions>
+<choiceOptions>[I]</choiceOptions>
 <choiceText>Think bigger...</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>OPEN_QUEST_GRAND</choiceGoto>
