@@ -1,0 +1,319 @@
+<!-- Festus the Mad -->
+
+<xml>
+
+<start>
+<startCondition>STAGE_AVAILABLE 408 1</startCondition>
+<startGoto>GOT_GRAND</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 408</startCondition>
+<startCondition>HAVE_ITEM 21968 1</startCondition>
+<startGoto>OPEN_QUEST_GRAND</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 407 4</startCondition>
+<startGoto>GOT_STUFF</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 96 1</startCondition>
+<startGoto>GOT_STUFF_HALLOWS</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 96 2</startCondition>
+<startCondition>HAVE_ITEM 17545 5</startCondition>
+<startCondition>HAVE_ITEM 17544 1</startCondition>
+<startGoto>GOT_STUFF_HALLOWS</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 407</startCondition>
+<startGoto>CURRENT</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 96</startCondition>
+<startGoto>CURRENT_HALLOWS</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 407</startCondition>
+<startCondition>HAVE_ITEM 21968 1</startCondition>
+<startGoto>OPEN_QUEST_BOTH</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 407</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<!-- Added in the Wand of Hallows quest-->
+<line>
+<lineTag>OPEN_QUEST_HALLOWS</lineTag>
+<lineText>When I said I wanted to make a wand that fired pumpkins instead of fireballs, they laughed at me - they laughed! Haaahahahaha! I'll show them though, I've been to the Pumpkin Plane, I've seen it with my own eyes. With your help I'll make that wand, and those mages in their marble towers will be laughing on the other side of their faces!</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Wand of Hallows</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HALLOWS</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_HALLOWS</lineTag>
+<lineText>I'm only missing the last few vital pieces to make the Wand of Hallows. I need five Pumpleroot Stalks - you can get those from Lesser Pumpleroots - and a single Pumpleroot Heart, that you can only get from Lord Pumpleroot himself. If you help me, I'll give you the finished wand - after all, the proof that I can make such a thing is all I need.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll help.</choiceText>
+<choiceAction>QUEST_ADD 96</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_STUFF_HALLOWS</lineTag>
+<lineText>Do you have the pieces I need to make the Wand of Hallows, [name]?</lineText>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here they are.</choiceText>
+<choiceAction>STAGE_COMPLETE 96 2</choiceAction>
+<choiceAction>STAGE_COMPLETE 96 3</choiceAction>
+<choiceAction>STAGE_COMPLETE 96 4</choiceAction>
+<choiceGoto>GOT_STUFF_HALLOWS_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_STUFF_HALLOWS_2</lineTag>
+<lineText>Hahaha, at last... at last I have them in my grasp. Behold, [name] - the Wand of Hallows! They'll call me Festus the Mad no longer. From now on I shall be known only as Festus the Slightly Unbalanced! Go now, my accomplice of the arcane, take the wand and show the world your pumpkilicious powers!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Thank you. Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_HALLOWS``</lineTag>
+<lineText>To make the Wand of Hallows I need five Pumpleroot Stalks - you can get those from Lesser Pumpleroots - and a single Pumpleroot Heart. You can only get a Pumpleroot Heart from Lord Pumpleroot, the lord of the pumpkins himself.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>POSTCOMP_HALLOWS</lineTag>
+<lineText>I may one day find myself becoming merely Festus the Mentally Stable, hardly a fitting moniker for a mage of my dazzling intellect and unusual taste for the arcane. But lo', an idea arrives unbidden at the gates of my mind! Tell me, [class], what would you think of a wand that fired giant carrots? I must away to my laboratory at once - until our next meeting, [name]!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+
+
+<line>
+<lineTag>OPEN_QUEST</lineTag>
+<lineText>It's natural for a mage of my level of intellect and brilliance to be doubted - but to be laughed at is an insult I cannot stand! They called me batty, [class] - insane! I'll show them batty, I'll make a weapon that fires bats that bite people with their tiny teeth! Oh! Did someone say "pumpkin"?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Cane of Bats</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>I heard you like pumpkins...</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_HALLOWS</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_GRAND</lineTag>
+<lineText>Ah, my apprentice comes gambolling towards me once again, I see. Keen to hear some more words of wisdom from the mind of a genius, are we? Very well, I have a plan for an even greater bat cane. The Grand Cane of Bats will fire a magically-enhanced bat. More powerful, and trailing sparks from its wings. How does that sound?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Grand Cane of Bats</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_GRAND_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_GRAND_2</lineTag>
+<lineText>This will be the most dazzling display of my arcane brilliance yet seen by man... or by bat, haha! I can make more Canes of Bats for you if you bring me the right ingredients. If you give me ten Canes of Bats, I can combine their power to form the ultimate in batty brilliance, the Grand Cane of Bats. Do you truly desire such a masterpiece of mayhem, [name]? Will you gather ten Canes of Bats?</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I will gather the canes.</choiceText>
+<choiceAction>QUEST_ADD 408</choiceAction>
+<choiceGoto>OPEN_QUEST_GRAND_3</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>No, you mad fool!</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_GRAND_3</lineTag>
+<lineText>Your potential knows no bounds, [race]. Now, all we need from you is another few Canes of Bats. Shall we start making them now?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Cane of Bats</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'm not ready yet.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_GRAND</lineTag>
+<lineText>So, my batty apprentice has returned. Have you got what I need to build the Grand Cane of Bats?</lineText>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here you are.</choiceText>
+<choiceAction>STAGE_COMPLETE 408 1</choiceAction>
+<choiceGoto>OPEN_QUEST_BOTH_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_BOTH</lineTag>
+<lineText>Ah, if it's not my apprentice... what's your name again? Sort of funny sounding, isn't it? '[name]', that's it! Good to see you, [name]. What can I do for you? Another Cane of Bats, perhaps?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Cane of Bats.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_BOTH_2</lineTag>
+<lineText>You do? Then watch me work my magic, [name]... here, my apprentice, is the fruits of our labours - the Grand Cane of Bats! They'll call me Festus the Mad no longer. From now on I shall be known only as Festus the Slightly Unbalanced!  Go now, my loyal Bat-[class], take the cane and strike fear into our enemies - fear borne through the night on a thousand fluttering wings!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Thank you, and farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST</lineTag>
+
+<lineText pageNext="Next.">The process of making the Cane of Bats is a closely guarded secret. It has absolutely nothing to do with stitching together the most powerful body parts of various breeds of bat and reanimating them with a magical brew that allows them to fly through the air and strike your enemies. Nothing to do with that at all, you hear, [name]? I'm not crazy enough to give away my secrets, you know!</lineText>
+
+
+<!-- <lineText pageNext="Next.">Nevertheless, I need some ingredients to aid in the construction of this weapon. Specifically, six Leathery Wings - those can be found on the Cave Bats that live near Crookback Hollow, six Eyes of Bat - these can be taken from the Black Bats that live in the woods near the Flintblade Bandit camp, and six Bat Fangs, which can only be found on the Vampire Bats that live near the encampment of the Skullcrushers.</lineText> -->
+<lineText pageNext="Next.">Nevertheless, I need some ingredients to aid in the construction of this weapon. Specifically, six Leathery Wings, six Eyes of Bat, and six Bat Fangs. I heard there is a bat infestation in the attic of this very tavern.</lineText>
+
+<!-- <lineText>Finally, I need four Mystic Brews that you can get from the Samhain Witches - these crones can be found flying all over Lir's Reach on their brooms. If you help me with these items, I'll give you the finished cane - after all, the proof that I can make such a thing is all I need.</lineText> -->
+<lineText>Finally, I need four Mystic Brews that you can get from the Samhain Witches - these crones can be found casting their curses in Dustwhiter Catacombs. If you help me with these items, I'll give you the finished cane - after all, the proof that I can make such a thing is all I need.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll help.</choiceText>
+<choiceAction>QUEST_ADD 407</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_STUFF</lineTag>
+<lineText>Do you have the pieces I need to make the Cane of Bats, [name]?</lineText>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here they are.</choiceText>
+<choiceAction>STAGE_COMPLETE 407 4</choiceAction>
+<choiceGoto>GOT_STUFF_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_STUFF_2</lineTag>
+<lineText>Hahaha, at last... at last I have them in my grasp. Behold, [name] - the Cane of Bats, a weapon the brilliance of which the so-called learned people of this land cannot begin to fathom! Go now, my accomplice of the arcane, take the cane and show the world your batty powers!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Thank you. Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT</lineTag>
+<lineText>To make the Cane of Bats I need you to slay six each of Common Bats, Brown Bats and Vampire Bats so I can channel the bats' life force into the cane. Also, I'll need four Witch's Brews - a special liquid that helps to power enchantments.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>POSTCOMP</lineTag>
+<lineText>I may one day find myself becoming merely Festus the Mentally Stable, hardly a fitting moniker for a mage of my dazzling intellect and unusual taste for the arcane. But lo', an idea arrives unbidden at the gates of my mind! Tell me, [class], what would you think of a cane that fired giant carrots? I must away to my laboratory at once - until our next meeting, [name]!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+</xml>
