@@ -91,6 +91,7 @@ VALUES (100001, 2, 57248, -1, 5);
 # eternal flight of guarding (armor)
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
 VALUES (100001, 2, 57258, -1, 6);
+# 
 # platinum lockbox
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
 VALUES (100001, 2, 34784, -1, 7);
