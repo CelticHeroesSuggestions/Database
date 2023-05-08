@@ -19,10 +19,22 @@ VALUES (101131, 'Kennis of the Snow', 0, 25, 0, 51, 0, 64, NULL, 0, 2, NULL, 409
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (14501, 93, 50, 82.28, 0, -23.4, "stand", "101131,1", 1, 190, 12, 0, 0, 0);
 
-# His quest should already be in Farcrag, no need to move it
+# weirdly, this quest was overwritted by the next year's event quest (Yuletide 2014 - Cranfir Crackers for Eagle Crests). A new quest is required, however this is for another day.
+
+# todo: create the quest
+# todo: create the quest stages
+# todo: create the quest reward loot set
+# todo: create the quest reward
+
 ```
 
 In `mob_data.txt` (patchserver), add:
 ```
 101131,101048,0.3,Kennis of the Snow,2730,0,1,-1,18,0,1,1.8,0,0,1
+```
+
+Update the `text.db` file by patching the following:
+```
+# create the quest
+# create the quest stages
 ```
