@@ -18,25 +18,25 @@ UPDATE ch_live_unitydatadb.shop_stock SET zone_id = 3 WHERE shop_id = 1081;
 
 # add the Phoenixes to the Ostara 2016 shop
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (15025, 2, 51554, -1, 20);
+VALUES (15025, 3, 51554, -1, 24);
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (15025, 2, 51555, -1, 21);
+VALUES (15025, 3, 51555, -1, 25);
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (15025, 2, 51556, -1, 22);
+VALUES (15025, 3, 51556, -1, 22);
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (15025, 2, 51557, -1, 23);
+VALUES (15025, 3, 51557, -1, 20);
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (15025, 2, 51558, -1, 24);
+VALUES (15025, 3, 51558, -1, 21);
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (15025, 2, 51559, -1, 25);
+VALUES (15025, 3, 51559, -1, 23);
 
 # update the Phoenix staff buy prices
-UPDATE ch_live_unitydatadb.item_templates SET buy_price = 5000, sell_price = 10000 WHERE item_id = 51554;
-UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000, sell_price = 20000 WHERE item_id = 51555;
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 5000, sell_price = 10000 WHERE item_id = 51557;
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000, sell_price = 20000 WHERE item_id = 51558;
 UPDATE ch_live_unitydatadb.item_templates SET buy_price = 20000, sell_price = 40000 WHERE item_id = 51556;
-UPDATE ch_live_unitydatadb.item_templates SET buy_price = 40000, sell_price = 80000 WHERE item_id = 51557;
-UPDATE ch_live_unitydatadb.item_templates SET buy_price = 80000, sell_price = 160000 WHERE item_id = 51558;
-UPDATE ch_live_unitydatadb.item_templates SET buy_price = 150000, sell_price = 300000 WHERE item_id = 51559;
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 40000, sell_price = 80000 WHERE item_id = 51559;
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 80000, sell_price = 160000 WHERE item_id = 51554;
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 150000, sell_price = 300000 WHERE item_id = 51555;
 
 
 ```
