@@ -1,0 +1,541 @@
+<xml>
+
+<!-- Winter 2013 Bear Quest Giver -->
+
+    <stringSub originalString="class_colour">
+        <stringSubLine className="WARRIOR"  replacementString="Red"/>
+        <stringSubLine className="RANGER" replacementString="Yellow"/>
+        <stringSubLine className="DRUID" replacementString="Green"/>
+        <stringSubLine className="MAGE" replacementString="Blue"/>
+        <stringSubLine className="ROGUE" replacementString="Purple"/>
+    </stringSub>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1336 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1335 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1334 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1333 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1332 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1331 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1330 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1329 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1328 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1327 3</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1336</startCondition>
+<startGoto>CURRENT_HIGH</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1335</startCondition>
+<startGoto>CURRENT_HIGH</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1334</startCondition>
+<startGoto>CURRENT_HIGH</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1333</startCondition>
+<startGoto>CURRENT_HIGH</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1332</startCondition>
+<startGoto>CURRENT_HIGH</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1331</startCondition>
+<startGoto>CURRENT_LOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1330</startCondition>
+<startGoto>CURRENT_LOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1329</startCondition>
+<startGoto>CURRENT_LOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1328</startCondition>
+<startGoto>CURRENT_LOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1327</startCondition>
+<startGoto>CURRENT_LOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1336</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1335</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1334</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1333</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1332</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1331</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1330</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1329</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1328</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1327</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<!--
+<start>
+<startCondition></startCondition>
+<startGoto></startGoto>
+</start>
+-->
+
+<line>
+<lineTag>OPEN</lineTag>
+<!--<lineText>I'm a big game hunter. When you're level LEVEL come back and see me - you can do some hunting for me and I'll reward you with a Bear Helm.</lineText>-->
+<lineText>Greetings, [class]. I am Ulfhildr, a great artisan from the lands north of your own. I seek the help of an adventurer to bring me certain materials found of rare and dangerous creatures so that I can make the valuable crafts that are my speciality. Alas, I do not believe you are yet powerful enough to tackle such daunting foes. Return to me when you are level 70 and we will talk again.</lineText>
+<choice>
+<choiceText>[X]Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST</lineTag>
+<lineText>Welcome, [class]. I am Ulfhildr, a great artisan from the lands north of your own. My particular skill is making powerful pieces of armour from the hides of the great beasts that roam my homeland. This cold winter has allowed these creatures to travel further south than they normally would, and I seek the help of an adventurer to bring me the materials I need to make my next masterpiece.</lineText>
+<choice>
+<choiceCondition>LEVEL_LESS_THAN 130</choiceCondition>
+<choiceText>[Q]Winter Crafts</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>LEVEL_GREATER_THAN 129</choiceCondition>
+<choiceText>[Q]Making a Masterpiece</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceText>[X]Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_LOW</lineTag>
+<lineText>I need you to bring me three [class_colour] Scales of the Frostclaw, three [class_colour] Crystals of the Ice Golem and three [class_colour] Teeth of the Frostbear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm. Will you get the items I require?</lineText>
+<choice>
+<choiceText>[I]Where can I find them?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>INFO_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1327</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1327</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1328</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1328</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1329</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1329</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1330</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1330</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1331</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1331</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_HIGH</lineTag>
+<lineText>I need you to bring me four [class_colour] Wings of the Frostclaw, four [class_colour] Hearts of the Ice Golem and four [class_colour] Paws of the Snow Bear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm. Will you get the items I require?</lineText>
+<choice>
+<choiceText>[I]Where can I find them?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>INFO_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1332</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1332</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1333</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1333</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1334</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1334</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1335</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1335</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1336</choiceCondition>
+<choiceText>[Y]I'll get the items.</choiceText>
+<choiceAction>QUEST_ADD 1336</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN</lineTag>
+<lineText>Welcome back, [class]. I am glad to see that you have the items I asked for. May I have them?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1327 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1327 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1328 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1328 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1329 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1329 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1330 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1330 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1331 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1331 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1332 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1332 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1333 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1333 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1334 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1334 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1335 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1335 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1336 3</choiceCondition>
+<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceAction>STAGE_COMPLETE 1336 3</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_2</lineTag>
+<!--<lineText>Thank you, [name]. These lands should now be safer due to your efforts. Please accept this Bear Helm as a reward - my bear helms have a number of different bonuses and tiers. If you ever want to earn another one, come back and see me. Farewell, [name].</lineText>-->
+<lineText>Thank you, [name]. I'll start work on your reward right now... a little stitching here, some more decoration over there... and behold - a work of art, crafted just for you! Still, I know I can make something even better than this, given the chance. If you would like me to make something else for you, come back and speak to me again. For now, [name], farewell.</lineText>
+<choice>
+<choiceText>[X]Thank you. Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_LOW</lineTag>
+<lineText>I need you to bring me three [class_colour] Scales of the Frostclaw, three [class_colour] Crystals of the Ice Golem and three [class_colour] Teeth of the Frostbear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm.</lineText>
+<choice>
+<choiceText>[I]Where can I find them?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>INFO_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceText>[X]I'll get the items.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_HIGH</lineTag>
+<lineText>I need you to bring me four [class_colour] Wings of the Frostclaw, four [class_colour] Hearts of the Ice Golem and four [class_colour] Paws of the Snow Bear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm.</lineText>
+<choice>
+<choiceText>[I]Where can I find them?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>INFO_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceText>[X]I'll get the items.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>INFO_LOW</lineTag>
+<lineText>You can loot [class_colour] Scales of the Frostclaw from Sleetscale and Shatterscale, [class_colour] Crystals of the Ice Golem from Coldfist and Hailfist, and [class_colour] Teeth of the Snow Bear from Snowpaw and Frosttooth. All of these creatures can be found in Fingal's Cave.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1327</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1328</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1329</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1330</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1331</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1327</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1328</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1329</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1330</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1331</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_LOW</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>INFO_HIGH</lineTag>
+<lineText>You can loot [class_colour] Wings of the Frostclaw from Frostscale and Tundrascale, [class_colour] Hearts of the Ice Golem from Frostfist and Stormfist, and [class_colour] Paws of the Snow Bear from Icepaw and Shattertooth. All of these creatures can be found in Lir's Reach.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1332</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1333</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1334</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1335</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1336</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1332</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1333</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1334</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1335</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1336</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_HIGH</choiceGoto>
+</choice>
+</line>
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
+
+</xml>

@@ -1,0 +1,247 @@
+<xml>
+
+<!-- Winter 2013 Wyvern Defector Quest NPC -->
+
+<start>
+<startCondition>QUEST_COMPLETE 1339</startCondition>
+<startGoto>POSTCOMP</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_COMPLETE 1338</startCondition>
+<startGoto>POSTCOMP</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_COMPLETE 1337</startCondition>
+<startGoto>POSTCOMP</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1339 5</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1338 5</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1337 5</startCondition>
+<startGoto>TURN_IN</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1339</startCondition>
+<startGoto>CURRENT_HIGH</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1338</startCondition>
+<startGoto>CURRENT_MID</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1337</startCondition>
+<startGoto>CURRENT_LOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1339</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+
+<start>
+<startCondition>QUEST_AVAILABLE 1338</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+
+<start>
+<startCondition>QUEST_AVAILABLE 1337</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<!--
+<start>
+<startCondition></startCondition>
+<startGoto></startGoto>
+</start>
+-->
+
+<line>
+<lineTag>OPEN</lineTag>
+<lineText>So this is what a [class] looks like these days is it? Maybe you have potential, but I've seen too many like you fall before their time. I have some work for an adventurer, true, but until you have gained more experience I cannot entrust you with the duties I have. Return to me when you are level 40 and we will talk again.</lineText>
+<choice>
+<choiceText>[X]Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST</lineTag>
+<lineText>Hail, [race]. Once again our clan is in dire need of a capable [class]. The ice dragon Natan Athach has arrived in Lir's Reach, and his presence has awakened great beasts that have slumbered in the hidden places of our land. Now they have awoken, they must be beaten back lest Lir's Reach is overrun. I cannot offer much as a reward, but this quest will give you valuable experience.</lineText>
+<choice>
+<choiceCondition>LEVEL_LESS_THAN 100</choiceCondition>
+<choiceCondition>QUEST_AVAILABLE 1337</choiceCondition>
+<choiceText>[Q]Winter Wolf Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_LOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>LEVEL_LESS_THAN 160</choiceCondition>
+<choiceCondition>QUEST_AVAILABLE 1338</choiceCondition>
+<choiceText>[Q]Winter Wyrm Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_MID</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1339</choiceCondition>
+<choiceText>[Q]Winter Wyvern Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_HIGH</choiceGoto>
+</choice>
+<choice>
+<choiceText>[X]Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_LOW</lineTag>
+<!--<lineText>There are a number of giant wolves threatening LOCATION. These wolves are known as Snowrend, Stormfang, Frosthowl, Icescar and Blizzardclaw. I need you to group together with some fellow adventurers and hunt down these beasts. Once they have been defeated, return to me for your reward.</lineText>-->
+<lineText>A pack of giant white wolves has descended upon Lir's Reach. Already I have heard reports of their size and ferocity, and I fear for the common folk of our land. I need you to group together with some fellow adventurers and hunt down these beasts. Will you lend me your aid, good [class]?</lineText>
+<choice>
+<choiceText>[Y]I'll hunt the wolves.</choiceText>
+<choiceAction>QUEST_ADD 1337</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_MID</lineTag>
+<!--<lineText>There are a number of giant wyrms threatening LOCATION. These wyrms are known as the Frostbite Shalewyrm, Icelake Shalewyrm, Tundra Shalewyrm, Winter Shalewyrm and Arctic Shalewyrm. I need you to group together with some fellow adventurers and hunt down these beasts. Once they have been defeated, return to me for your reward.</lineText>-->
+<lineText>I have heard reports of great wyrms crawling up from beneath the ground in the Otherworld. If they get to Lir's Reach, their icy breath will spell doom for many folk. I need you to group together with some fellow adventurers, travel to the Otherworld, and slay these creatures. Will you lend me your aid, good [class]?</lineText>
+<choice>
+<choiceText>[Y]I'll hunt the wyrms.</choiceText>
+<choiceAction>QUEST_ADD 1338</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_HIGH</lineTag>
+<!--<lineText>There are a number of giant wyverns threatening LOCATION. These wyverns are known as NAME_1, NAME_2, NAME_3, NAME_4 and NAME_5. I need you to group together with some fellow adventurers and hunt down these beasts. Once they have been defeated, return to me for your reward.</lineText>-->
+<lineText>I have received reports that a brood of terrible Icestorm Wyverns have awoken in the tunnels beneath Lir's Reach. It will not be long before they come to the surface to prey upon the innocent. I need you to group together with some fellow adventurers, travel to Carrowmore Tunnels, and defeat these creatures. Will you lend me you aid, good [class]?</lineText>
+<choice>
+<choiceText>[Y]I'll hunt the wyverns.</choiceText>
+<choiceAction>QUEST_ADD 1339</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN</lineTag>
+<lineText>Ah, you've returned safe and sound, [class]. I'm glad. Tell me, are the beasts defeated?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1337 5</choiceCondition>
+<choiceText>[C]I defeated the wolves.</choiceText>
+<choiceAction>STAGE_COMPLETE 1337 5</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1338 5</choiceCondition>
+<choiceText>[C]I defeated the wyrms.</choiceText>
+<choiceAction>STAGE_COMPLETE 1338 5</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1339 5</choiceCondition>
+<choiceText>[C]I defeated the wyverns.</choiceText>
+<choiceAction>STAGE_COMPLETE 1339 5</choiceAction>
+<choiceGoto>TURN_IN_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_2</lineTag>
+<lineText>That is joyous news, [race]. In defeating these creatures, you've brought peace to our lands, at least for a while. Alas, I fear that more of their ilk will arrive 'ere long. Please accept this potion as a token of my gratitude. It is but a small gesture - the experience you have gained on your adventure is the real reward. Come back and see me tomorrow - I may have more work for you then. Farewell, [name].</lineText>
+<choice>
+<choiceText>[X]Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_LOW</lineTag>
+<lineText>I need you to hunt down the fearsome Snowrend, Stormfang, Frosthowl, Icescar and Shatterclaw. You can find all these wolves in Lir's Reach.</lineText>
+<choice>
+<choiceText>[X]I'll hunt the wolves.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_MID</lineTag>
+<lineText>I need you to hunt down the fearsome Frostbite Shalewyrm, Icelake Shalewyrm, Tundra Shalewyrm, Winter Shalewyrm and Arctic Shalewyrm. You can find all these wyrms in the Otherworld.</lineText>
+<choice>
+<choiceText>[X]I'll hunt the wyrms.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_HIGH</lineTag>
+<lineText>I need you to hunt down the fearsome Icestorm Wyverns. You can find all five of these wyverns in Carrowmore Tunnels.</lineText>
+<choice>
+<choiceText>[X]I'll hunt the wyverns.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>POSTCOMP</lineTag>
+<lineText>You've done well defeating those creatures, but I fear that more will arrive 'ere long. Come back and see me tomorrow - I may have more work for you then.</lineText>
+<choice>
+<choiceText>[X]Until tomorrow.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
+
+</xml>

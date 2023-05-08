@@ -1,0 +1,195 @@
+<xml>
+
+<!-- Yulefather's Helper NPC -->
+
+<start>
+<startCondition>STAGE_AVAILABLE 1340 10</startCondition>
+<startGoto>TURN_IN_SECOND</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1340 9</startCondition>
+<startGoto>CURRENT_SECOND</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1340 8</startCondition>
+<startGoto>TURN_IN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1340</startCondition>
+<startGoto>CURRENT_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1340</startCondition>
+<startGoto>OPEN_QUEST</startGoto>
+</start>
+
+<!--
+<start>
+<startCondition></startCondition>
+<startGoto></startGoto>
+</start>
+-->
+
+<line>
+<lineTag>OPEN</lineTag>
+<!--<lineText>I need your help on some things, but you're not experienced enough. Come back to me when you're level 20.</lineText>-->
+<lineText>I need your help on some things, but you're not experienced enough. Come back to me when you're level 20.</lineText>
+<choice>
+<choiceText>[X]Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST</lineTag>
+<!--<lineText>The terrible Gloomgaze is going to take over Yuletide - he's possessed all the Yulefather's helpers, and they're going to do something really nasty! I need your help!</lineText>-->
+<lineText>Every Yule, adversaries across the land lay down their weapons to become 'Yule Helpers', assisting the Yulefather in giving out presents in the spirit of friendship... but now tragedy has struck! The Yulefather's arch-enemy, the evil spirit Gloomgaze, has cast a spell over all the Yule Helpers, taking them under his control. Now he's going to use them to ruin the Yule celebrations for everybody - [class], we need your help!</lineText>
+<choice>
+<choiceText>[Q]The Winter of Discontent</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_2</lineTag>
+<!--<lineText>I need you to gather snowballs by bashing the snowmen you can find around Lir's Reach, then throw one at each of the Helpers that have been possessed by Gloomgaze in order to knock them out. When all the helpers have been knocked out, come back to me. Will you aid me?</lineText>-->
+<!--<lineText>The only way to break the spell over the Yule Helpers is to knock them out - a solidly packed snowball should do the trick! Loot snowballs from the Snowmen you'll find across Lir's Reach - then use one snowball on each of the Yule Helpers. If you are successful in this task, I'll reward you with a special Candycane weapon. Will you aid me, [name]?</lineText>-->
+<lineText>The only way to break the spell over the Yule Helpers is to knock them out - a snowball should do the trick! Loot snowballs from the Snowmen you'll find across Lir's Reach - then use one snowball on each of the Yule Helpers. Aid me, and I'll reward you with a special Candycane weapon!</lineText>
+<choice>
+<choiceText>[I]Candycanes.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CANDYCANE_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceText>[Y]I'll aid you.</choiceText>
+<choiceAction>QUEST_ADD 1340</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CANDYCANE_INFO</lineTag>
+<lineText pageNext="Snowbound Candycanes">The red Candycane is the most common one I'll give you. The pink, orange and yellow Candycanes are all quite common, and the green Candycane is the next most common after that. The turquoise and blue Candycanes are rare, the purple Candycane even more so. The black Candycane is the second rarest Candycane I have, and the white Candycane is the rarest - if you get one of those, you'll be very lucky!</lineText>
+
+<lineText>There are also Snowbound Candycanes, all of which are rarer then the ordinary Candycanes. They come in the same set of colours from red all the way up to white. The Snowbound White Candycane is the rarest Candycane of all!</lineText>
+<choice>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_FIRST</lineTag>
+<lineText>You're back, [class]. Have you managed to knock out all the Yule Helpers?</lineText>
+<choice>
+<choiceText>[C]I knocked them out.</choiceText>
+<choiceAction>STAGE_COMPLETE 1340 8</choiceAction>
+<choiceGoto>TURN_IN_FIRST_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_FIRST_2</lineTag>
+<!--<lineText>Well done, [name], but we're not safe yet. Gloomgaze still remains, and must be defeated. I need you to find Gloomgaze, defeat him, and recover the Gloom Crystal that he's using to control the Yulefather's Helpers. Will you get the crystal for me?</lineText>-->
+<!--<lineText>You have done well, [name]. The Yule Helpers' minds are their own once more... but Gloomgaze himself still remains. I ask one final task of you - find Gloomgaze and retreive his Crystal of Command. Without it he will be unable to take back control of the Yulefather's Helpers, and Yule will belong to the forces of joy and merriment once again - will you get the crystal, [name]?</lineText>-->
+<lineText>You have done well, [name]. The Yule Helpers' minds are their own once more... but Gloomgaze himself still remains. I ask one final task of you - find Gloomgaze and defeat him! Beware though, [class], for Gloomgaze is a powerful opponent - it may be wise to enlist the help of some friends before you seek him out. Will you aid me, [name]?</lineText>
+<choice>
+<choiceText>[Y]I'll defeat Gloomgaze.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_SECOND</lineTag>
+<lineText>I'm glad to see you safe and well, [class]. Have you defeated Gloomgaze?</lineText>
+<choice>
+<choiceText>[C]Yes, I defeated him.</choiceText>
+<choiceAction>STAGE_COMPLETE 1340 10</choiceAction>
+<choiceGoto>TURN_IN_SECOND_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_SECOND_2</lineTag>
+<lineText>Thank you, [name]. You've foiled Gloomgaze's schemes and brought some Yule cheer to Lir's Reach - please accept this Candycane as a reward! Still, I'm sure it's only a matter of time before Gloomgaze is back to his old tricks, so if you ever fancy earning another Candycane, come back and see me - I have a number of different coloured Candycanes to collect, and I'm sure I'll have need of your help.</lineText>
+<choice>
+<choiceText>[X]Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_FIRST</lineTag>
+<lineText>I need you to throw a snowball at each of the Yule Helpers that are being controlled by the evil winter spirit, Gloomgaze, in order to knock them out and break Gloomgaze's hold over them. You can loot snowballs from the Snowmen that can be found all over Lir's Reach.</lineText>
+<choice>
+<choiceText>[I]Gloomgaze</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>GLOOMGAZE_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceText>[X]Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_SECOND</lineTag>
+<lineText>I need you to defeat Gloomgaze. Beware though, for he is a formidable opponent - you may need to group together with some fellow adventurers to defeat him.</lineText>
+<choice>
+<choiceText>[I]Gloomgaze</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>GLOOMGAZE_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceText>[X]I'll defeat Gloomgaze.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GLOOMGAZE_INFO</lineTag>
+<lineText>Where the Yulefather brings cheer to the Celtic lands during the harsh winter months, his arch-enemy Gloomgaze has only malice and contempt in his cold heart, and seeks to stop the Yulefather at every turn. If Gloomgaze got his way, the only presents we would get for Yule would be hail and sleet! I'm proud to be one of the Yulefather's Helpers this year, but there's not much the likes of me can do against Gloomgaze - fortunately, you're on my side!</lineText>
+<choice>
+<choiceCondition>QUEST_CURRENT 1340</choiceCondition>
+<choiceCondition>STAGE_NOT_AVAILABLE 1340 9</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_FIRST</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1340 9</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_SECOND</choiceGoto>
+</choice>
+</line>
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
+
+</xml>
