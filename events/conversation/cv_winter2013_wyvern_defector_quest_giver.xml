@@ -75,7 +75,8 @@
 <lineTag>OPEN</lineTag>
 <lineText>So this is what a [class] looks like these days is it? Maybe you have potential, but I've seen too many like you fall before their time. I have some work for an adventurer, true, but until you have gained more experience I cannot entrust you with the duties I have. Return to me when you are level 40 and we will talk again.</lineText>
 <choice>
-<choiceText>[X]Goodbye.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -87,25 +88,29 @@
 <choice>
 <choiceCondition>LEVEL_LESS_THAN 100</choiceCondition>
 <choiceCondition>QUEST_AVAILABLE 1337</choiceCondition>
-<choiceText>[Q]Winter Wolf Hunt</choiceText>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Winter Wolf Hunt</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>QUEST_LOW</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>LEVEL_LESS_THAN 160</choiceCondition>
 <choiceCondition>QUEST_AVAILABLE 1338</choiceCondition>
-<choiceText>[Q]Winter Wyrm Hunt</choiceText>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Winter Wyrm Hunt</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>QUEST_MID</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1339</choiceCondition>
-<choiceText>[Q]Winter Wyvern Hunt</choiceText>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Winter Wyvern Hunt</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>QUEST_HIGH</choiceGoto>
 </choice>
 <choice>
-<choiceText>[X]Goodbye.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -164,19 +169,22 @@
 <lineText>Ah, you've returned safe and sound, [class]. I'm glad. Tell me, are the beasts defeated?</lineText>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1337 5</choiceCondition>
-<choiceText>[C]I defeated the wolves.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>I defeated the wolves.</choiceText>
 <choiceAction>STAGE_COMPLETE 1337 5</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1338 5</choiceCondition>
-<choiceText>[C]I defeated the wyrms.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>I defeated the wyrms.</choiceText>
 <choiceAction>STAGE_COMPLETE 1338 5</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1339 5</choiceCondition>
-<choiceText>[C]I defeated the wyverns.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>I defeated the wyverns.</choiceText>
 <choiceAction>STAGE_COMPLETE 1339 5</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
@@ -186,7 +194,8 @@
 <lineTag>TURN_IN_2</lineTag>
 <lineText>That is joyous news, [race]. In defeating these creatures, you've brought peace to our lands, at least for a while. Alas, I fear that more of their ilk will arrive 'ere long. Please accept this potion as a token of my gratitude. It is but a small gesture - the experience you have gained on your adventure is the real reward. Come back and see me tomorrow - I may have more work for you then. Farewell, [name].</lineText>
 <choice>
-<choiceText>[X]Farewell.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -196,7 +205,8 @@
 <lineTag>CURRENT_LOW</lineTag>
 <lineText>I need you to hunt down the fearsome Snowrend, Stormfang, Frosthowl, Icescar and Shatterclaw. You can find all these wolves in Lir's Reach.</lineText>
 <choice>
-<choiceText>[X]I'll hunt the wolves.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll hunt the wolves.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -206,7 +216,8 @@
 <lineTag>CURRENT_MID</lineTag>
 <lineText>I need you to hunt down the fearsome Frostbite Shalewyrm, Icelake Shalewyrm, Tundra Shalewyrm, Winter Shalewyrm and Arctic Shalewyrm. You can find all these wyrms in the Otherworld.</lineText>
 <choice>
-<choiceText>[X]I'll hunt the wyrms.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll hunt the wyrms.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -216,7 +227,8 @@
 <lineTag>CURRENT_HIGH</lineTag>
 <lineText>I need you to hunt down the fearsome Icestorm Wyverns. You can find all five of these wyverns in Carrowmore Tunnels.</lineText>
 <choice>
-<choiceText>[X]I'll hunt the wyverns.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll hunt the wyverns.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -226,7 +238,8 @@
 <lineTag>POSTCOMP</lineTag>
 <lineText>You've done well defeating those creatures, but I fear that more will arrive 'ere long. Come back and see me tomorrow - I may have more work for you then.</lineText>
 <choice>
-<choiceText>[X]Until tomorrow.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Until tomorrow.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
