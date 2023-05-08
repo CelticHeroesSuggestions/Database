@@ -6,9 +6,13 @@
 * Changes:
 
 ```
-# Ulfhildr the Artisan
+# INCOMPLETE Not sure what NPC to use
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (13530, 93, 50, -5.88, 0, 1.37, "stand", "806,1", 1, 345, 50, 0, 0, 0);
+VALUES (13530, 93, 50, -5.88, 0, 1.37, "stand", ",1", 1, 345, 50, 0, 0, 0);
+
+# as with other Yuletide 2013 NPCs, the conversation was deleted. Patch in Database/events/conversation/
+
+# update conversation_lookup.txt, I used 1008
 
 # move the quests to Farcrag Castle (they should already be there by default)
 UPDATE ch_live_unitydatadb.quest_templates SET zone = 93 WHERE quest_id = 1307;
