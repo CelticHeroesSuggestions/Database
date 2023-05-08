@@ -1,14 +1,13 @@
-# Yuletide 2013: Gloomgaze and Snowmen and Frost Spirits
+# Yuletide 2013: Candycanes and Snowmen
 
-* What: Spawn points for the Yuletide 2013 Gloomgaze, Snowmen, and Frost Spirits
-* Why: Gloomgaze dropped a cool consumable, and the snowmen dropped snowballs. It would be cool to introduce them again.
-* Table: `ch_live_unitydatadb.spawn_points`.
+* What: Spawn points for the Yuletide 2013 Candycane quest, which includes Gloomgaze, Snowmen, and Frost Spirits
+* Why: The candycanes are fun, Gloomgaze dropped a cool consumable, and the snowmen dropped snowballs. It would be cool to introduce them again.
 * Notes: I placed Gloomgaze near Highshore where he originally spawned. I placed three snowmen around Lirs Reach. I placed the Frost Spirits near Gloomgaze (inauthentic, but it's nice keeping the themes together).
 * Changes:
 ```
 # Iona (Candy Cane quest)
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (13520, 2, 1, -89.57, 0, -272.04, "stand", "808,1", 1, 280, 2, 0, 0, 0);
+VALUES (13520, 93, 1, -9.38, 0, -0.43, "stand", "808,1", 1, 45, 2, 0, 0, 0);
 
 # Iona's dialogue is missing, so you will need to patch in Database/events/conversation/cv_winter2013_fun_weapon_quest_giver.xml
 
