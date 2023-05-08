@@ -48,6 +48,8 @@ VALUES (11516, 2, 10, -240.93, 0, 18.85, "random 10 0 0 1", "70677,1", 1, 135, 2
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (11517, 2, 10, -244.93, 0, 16.85, "random 10 0 0 1", "70677,1", 1, 135, 20, 0, 0, 0);
 
+# update the model scale of the golems
+UPDATE ch_live_unitydatadb.mob_templates SET model_scale = 0.01 WHERE mob_template_id = 70682;
 ```
 
 Edit `mob_data.txt`: change the Snowstorm Golems from tiny snowmen to actual blue golems
