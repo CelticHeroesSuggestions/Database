@@ -11,8 +11,8 @@ VALUES (13540, 93, 1, -6.11, 0, -0.88, "stand", "805,1", 1, 190, 2, 0, 0, 0);
 
 # this mob's conversation was removed from the game, so you will need to patch in Database/events/conversation/cv_winter_2013_lux_vendor.xml
 
-# add the conversation to conversation_lookup.txt, I used the ID 1003
+# add the conversation to conversation_lookup.txt, I will use the ID 1003 (which shouldn't conflict with anything else)
 
-# update the conversation to the new dialogue we will make
+# update the NPC's conversation
 UPDATE ch_live_unitydatadb.mob_templates SET conversation_id = 1003 WHERE mob_template_id = 805;
 ```
