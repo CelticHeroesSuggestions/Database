@@ -41,31 +41,31 @@ UPDATE ch_live_unitydatadb.loot_table_items SET amount = 10 WHERE loot_table_id 
 
 # Glaring Terrors
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15441, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,2;138440,1", 1, 200, 15, 0, 0, 0);
+VALUES (15441, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,10;138440,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15442, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,2;138440,1", 1, 200, 15, 0, 0, 0);
+VALUES (15442, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,10;138440,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15443, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,2;138440,1", 1, 200, 15, 0, 0, 0);
+VALUES (15443, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,10;138440,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15444, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,2;138440,1", 1, 200, 15, 0, 0, 0);
+VALUES (15444, 6, 10, 19.75, 0, 58.57, "random 5 0 0 1", "138437,10;138440,1", 1, 200, 15, 0, 0, 0);
 
 # Seething Blinders
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15445, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,2;138441,1", 1, 200, 15, 0, 0, 0);
+VALUES (15445, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,10;138441,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15446, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,2;138441,1", 1, 200, 15, 0, 0, 0);
+VALUES (15446, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,10;138441,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15447, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,2;138441,1", 1, 200, 15, 0, 0, 0);
+VALUES (15447, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,10;138441,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15448, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,2;138441,1", 1, 200, 15, 0, 0, 0);
+VALUES (15448, 6, 10, 96.53, 0, 69.04, "random 5 0 0 1", "138438,10;138441,1", 1, 200, 15, 0, 0, 0);
 
 # Mind Borers
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15449, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,2;138442,1", 1, 200, 15, 0, 0, 0);
+VALUES (15449, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,10;138442,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15450, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,2;138442,1", 1, 200, 15, 0, 0, 0);
+VALUES (15450, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,10;138442,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15451, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,2;138442,1", 1, 200, 15, 0, 0, 0);
+VALUES (15451, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,10;138442,1", 1, 200, 15, 0, 0, 0);
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
-VALUES (15452, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,2;138442,1", 1, 200, 15, 0, 0, 0);
+VALUES (15452, 6, 10, 7.37, 0, -55.43, "random 5 0 0 1", "138439,10;138442,1", 1, 200, 15, 0, 0, 0);
 ```
