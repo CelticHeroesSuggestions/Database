@@ -19,8 +19,40 @@ VALUES (101131, 'Kennis of the Snow', 0, 25, 0, 51, 0, 64, NULL, 0, 2, NULL, 409
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (14501, 93, 50, 82.28, 0, -23.4, "stand", "101131,1", 1, 190, 12, 0, 0, 0);
 
-# weirdly, this quest was overwritted by the next year's event quest (Yuletide 2014 - Cranfir Crackers for Eagle Crests). A new quest is required, however this is for another day.
+# weirdly, this quest was overwritted by the next year's event quest (Yuletide 2014 - Cranfir Crackers for Eagle Crests). A new quest is required, however that is for another day.
 
+# as an interim fix, add the top hats to the wing shop
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53396, -1, 10);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53397, -1, 11);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53323, -1, 12);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53328, -1, 13);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53327, -1, 14);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53326, -1, 15);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53325, -1, 16);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53330, -1, 17);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53324, -1, 18);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53329, -1, 19);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53322, -1, 20);
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (12005, 93, 53321, -1, 21);
+
+# set the buy and sell price for the top hats
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000, sell_price = 20000 WHERE item_id >= 53301 AND item_id <= 53330;
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000, sell_price = 20000 WHERE item_id = 53397;
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000, sell_price = 20000 WHERE item_id = 53396;
+
+# To add this quest yourself (if you make this, please make a pull request!):
 # todo: create the quest
 # todo: create the quest stages
 # todo: create the quest reward loot set
@@ -38,3 +70,5 @@ Update the `text.db` file by patching the following:
 # create the quest
 # create the quest stages
 ```
+
+Update the conversation `cv_winter2014_hat_quest.xml` to change the quest IDs to the new quest
