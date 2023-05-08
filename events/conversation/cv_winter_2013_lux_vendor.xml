@@ -11,7 +11,8 @@
 <lineTag>OPEN_NO_GOLD</lineTag>
 <lineText>Welcome, [class]. My name is Braith - I spent most of the year exploring lands to the north, searching for valuable artifacts to sell upon my return. I have a fine selection of treasures that would be a good fit for a [class] like you. Alas, I fear you do not have the means to make a purchase just yet. Please come back when you have at least 10,000 gold.</lineText>
 <choice>
-<choiceText>[X]Goodbye.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -21,12 +22,14 @@
 <lineTag>OPEN</lineTag>
 <lineText>Welcome, [class]. My name is Braith, and although Dal Riata is my home, I spend the summer months journeying through the northern lands. When the snows begin to come in earnest, I know it is time to head south once more. I sell the valuable items I have discovered on my travels, and this pays for next year's expedition. Would you like to see what I have to sell?</lineText>
 <choice>
-<choiceText>[S]Show me what you have.</choiceText>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>Show me what you have.</choiceText>
 <choiceAction>SHOP 12001</choiceAction>
 <choiceGoto>OPEN</choiceGoto>
 </choice>
 <choice>
-<choiceText>[X]No thank you.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>No thank you.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
