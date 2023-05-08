@@ -172,7 +172,8 @@
 <!--<lineText>I'm a big game hunter. When you're level LEVEL come back and see me - you can do some hunting for me and I'll reward you with a Bear Helm.</lineText>-->
 <lineText>Greetings, [class]. I am Ulfhildr, a great artisan from the lands north of your own. I seek the help of an adventurer to bring me certain materials found of rare and dangerous creatures so that I can make the valuable crafts that are my speciality. Alas, I do not believe you are yet powerful enough to tackle such daunting foes. Return to me when you are level 70 and we will talk again.</lineText>
 <choice>
-<choiceText>[X]Goodbye.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -183,18 +184,21 @@
 <lineText>Welcome, [class]. I am Ulfhildr, a great artisan from the lands north of your own. My particular skill is making powerful pieces of armour from the hides of the great beasts that roam my homeland. This cold winter has allowed these creatures to travel further south than they normally would, and I seek the help of an adventurer to bring me the materials I need to make my next masterpiece.</lineText>
 <choice>
 <choiceCondition>LEVEL_LESS_THAN 130</choiceCondition>
-<choiceText>[Q]Winter Crafts</choiceText>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Winter Crafts</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>QUEST_LOW</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>LEVEL_GREATER_THAN 129</choiceCondition>
-<choiceText>[Q]Making a Masterpiece</choiceText>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Making a Masterpiece</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>QUEST_HIGH</choiceGoto>
 </choice>
 <choice>
-<choiceText>[X]Goodbye.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -204,42 +208,49 @@
 <lineTag>QUEST_LOW</lineTag>
 <lineText>I need you to bring me three [class_colour] Scales of the Frostclaw, three [class_colour] Crystals of the Ice Golem and three [class_colour] Teeth of the Frostbear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm. Will you get the items I require?</lineText>
 <choice>
-<choiceText>[I]Where can I find them?</choiceText>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Where can I find them?</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>INFO_LOW</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1327</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1327</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1328</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1328</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1329</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1329</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1330</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1330</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1331</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1331</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
-<choiceText>[N]I can't help right now.</choiceText>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>I can't help right now.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -249,42 +260,49 @@
 <lineTag>QUEST_HIGH</lineTag>
 <lineText>I need you to bring me four [class_colour] Wings of the Frostclaw, four [class_colour] Hearts of the Ice Golem and four [class_colour] Paws of the Snow Bear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm. Will you get the items I require?</lineText>
 <choice>
-<choiceText>[I]Where can I find them?</choiceText>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Where can I find them?</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>INFO_HIGH</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1332</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1332</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1333</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1333</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1334</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1334</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1335</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1335</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>QUEST_AVAILABLE 1336</choiceCondition>
-<choiceText>[Y]I'll get the items.</choiceText>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction>QUEST_ADD 1336</choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
 <choice>
-<choiceText>[N]I can't help right now.</choiceText>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>I can't help right now.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -295,61 +313,71 @@
 <lineText>Welcome back, [class]. I am glad to see that you have the items I asked for. May I have them?</lineText>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1327 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1327 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1328 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1328 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1329 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1329 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1330 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1330 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1331 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1331 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1332 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1332 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1333 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1333 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1334 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1334 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1335 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1335 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
 <choice>
 <choiceCondition>STAGE_AVAILABLE 1336 3</choiceCondition>
-<choiceText>[C]Yes, here are the items.</choiceText>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here are the items.</choiceText>
 <choiceAction>STAGE_COMPLETE 1336 3</choiceAction>
 <choiceGoto>TURN_IN_2</choiceGoto>
 </choice>
@@ -360,7 +388,8 @@
 <!--<lineText>Thank you, [name]. These lands should now be safer due to your efforts. Please accept this Bear Helm as a reward - my bear helms have a number of different bonuses and tiers. If you ever want to earn another one, come back and see me. Farewell, [name].</lineText>-->
 <lineText>Thank you, [name]. I'll start work on your reward right now... a little stitching here, some more decoration over there... and behold - a work of art, crafted just for you! Still, I know I can make something even better than this, given the chance. If you would like me to make something else for you, come back and speak to me again. For now, [name], farewell.</lineText>
 <choice>
-<choiceText>[X]Thank you. Farewell.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Thank you. Farewell.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -370,12 +399,14 @@
 <lineTag>CURRENT_LOW</lineTag>
 <lineText>I need you to bring me three [class_colour] Scales of the Frostclaw, three [class_colour] Crystals of the Ice Golem and three [class_colour] Teeth of the Frostbear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm.</lineText>
 <choice>
-<choiceText>[I]Where can I find them?</choiceText>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Where can I find them?</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>INFO_LOW</choiceGoto>
 </choice>
 <choice>
-<choiceText>[X]I'll get the items.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
@@ -385,12 +416,14 @@
 <lineTag>CURRENT_HIGH</lineTag>
 <lineText>I need you to bring me four [class_colour] Wings of the Frostclaw, four [class_colour] Hearts of the Ice Golem and four [class_colour] Paws of the Snow Bear. In return, I will make you one of my valuable crafts - a set of bracers or boots, or a mighty helm.</lineText>
 <choice>
-<choiceText>[I]Where can I find them?</choiceText>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Where can I find them?</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>INFO_HIGH</choiceGoto>
 </choice>
 <choice>
-<choiceText>[X]I'll get the items.</choiceText>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the items.</choiceText>
 <choiceAction> </choiceAction>
 <choiceGoto>-1</choiceGoto>
 </choice>
