@@ -13,7 +13,6 @@ UPDATE ch_live_unitydatadb.skill_templates SET casting_range = 12 WHERE skill_id
 UPDATE ch_live_unitydatadb.skill_templates SET casting_range = 12 WHERE skill_id = 221;
 # increase Frostbite cast range
 UPDATE ch_live_unitydatadb.skill_templates SET casting_range = 12 WHERE skill_id = 222;
-# may also need to update this on the clientside skill_list.txt
 
 # increase Ice Shards damage for non-PvP
 # at level 50 with 500foc and 8000ability, IS does 6474/(15+1)=405 and FB does 4462/(6.5)=686), so FB has a 70% gain
