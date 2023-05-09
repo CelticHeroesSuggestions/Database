@@ -156,6 +156,7 @@ Update skill ranges in `skills_list.txt`
 
 Update Frostbite's skill effect in `status_effects_list.txt`
 ```
+...
 139^100^Frostbite^130^You are suffering from a freezing magic, causing damage over time.^3
 0,0.9,60,1.8,0
 0,0.5,60,1,1
@@ -257,4 +258,5 @@ Update Frostbite's skill effect in `status_effects_list.txt`
 48,66.4,60,53.8,1
 49,123.47999999999999,60,98.82,0
 49,68.6,60,54.9,1
+...
 ```
