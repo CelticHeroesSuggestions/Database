@@ -3,7 +3,6 @@
 * What: Update druid skills and gear to fix minor issues
 * Why: Druids have some questionable gear and skills, that would be easy for DECA to update for immediate improvements.
 * Notes: This does not include a comprehensive staff redo, which is sorely needed. My idea for staffs is to make them superior to druid totem/offhands for casters, giving regen/stats/skill points.
-* 
 * Changes:
 ```
 
