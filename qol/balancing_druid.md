@@ -5,7 +5,23 @@
 * Notes: This does not include a comprehensive staff redo, which is sorely needed. My idea for staffs is to make them superior to druid totem/offhands for casters (so totem have a place for melee-assisted DPS), giving regen/stats/skill points.
 * Changes:
 ```
+# allow Druids to use Lure of Magic tome
+UPDATE ch_live_unitydatadb.item_templates SET class_requirement_list = '2,3' WHERE item_id = 17968;
+# allow Druids to use Energy Boost tome
+UPDATE ch_live_unitydatadb.item_templates SET class_requirement_list = '2,3' WHERE item_id = 1056;
 
+# add Energy Boost tome to druid skill shop
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (6, 93, 1056, -1, 1);
+```
+
+Update the spell tomes in `item_list.txt`
+```
+...
+1056|0|0|-1|0|0|61|16191|7868|-1|0|76||||3;4|1|0|1056|-1|0|0|0|0|0|0|0|0|1|1|||||9999|0|-1|0|0|0|||
+...
+17968|0|0|-1|0|0|61|16175|7852|-1|0|76||||3;4|1|0|1137|-1|0|0|0|0|0|0|0|0|1|1|||||9999|0|-1|0|0|0|||
+...
 ```
 
 Update Strangling Vine's skill effect in `status_effects_list.txt`
