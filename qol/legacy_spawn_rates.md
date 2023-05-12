@@ -45,7 +45,4 @@ UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,10;100021,1;10003
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,10;100031,1;100043,1' WHERE spawn_point_id = 2897;
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,10;100032,1;100044,1' WHERE spawn_point_id = 2898;
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,10;100033,1;100045,1' WHERE spawn_point_id = 2899;
-
-# Shalemont Blademaster Dolan
-UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70282,250;70289,250;70356,250;142015,148' WHERE spawn_point_id = 356;
 ```
