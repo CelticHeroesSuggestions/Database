@@ -6,17 +6,19 @@
 * Changes:
 ```
 # Lirs Reach: Bloodfang, Shadowhowl, Fenris
-UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70003,100;70108,100;70108,5;70689,5;70690,5' WHERE spawn_point_id = 18;
-UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70003,100;70108,100;70108,5;70689,5;70690,5' WHERE spawn_point_id = 59;
-UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70003,200;70108,5;70689,5;70690,5' WHERE spawn_point_id = 60;
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,100,5;70689,5;70690,5' WHERE spawn_point_id = 59;
 
-# Lirs Reach: Sunclaw
+# Lirs Reach: Sunclaw, Ythair
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70003,180;70108,90;70110,45;71373,1;71374,1;71375,1' WHERE spawn_point_id = 62;
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,5;71190,1' WHERE spawn_point_id = 1031;
 
 # Lirs Reach: King Vorum Dreadbone
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,10;72738,1;72751,1' WHERE spawn_point_id = 1112;
 
-# Shalemont: Connacht Armor bosses
+# Shalemont Ravine: Moon Masks
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70262,5;70263,5;70266,5;70268,5;70270,5;70273,5;70637,5;71344,5' WHERE spawn_point_id = 281;
+
+# Shalemont Ravine: Connacht Armor bosses
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,2000;70679,8;70680,8;70681,8;70686,4;70687,4;70688,4' WHERE spawn_point_id = 331;
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,2000;70679,8;70680,8;70681,8;70686,4;70687,4;70688,4' WHERE spawn_point_id = 327;
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '-1,2000;70679,8;70680,8;70681,8;70686,4;70687,4;70688,4' WHERE spawn_point_id = 355;
