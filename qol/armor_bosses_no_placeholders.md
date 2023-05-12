@@ -37,4 +37,47 @@ UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70720,50;70781,50;70
 # Rockbelly
 UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70721,50;70782,50;70792,8' WHERE spawn_point_id = 620;
 
+# Frozen
+# Eye
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71055,10;71223,10;71251,10' WHERE spawn_point_id = 988;
+# Kelpie
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71054,10;71224,10;71252,10' WHERE spawn_point_id = 704;
+# Ghost
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71052,10;71226,10;71253,10' WHERE spawn_point_id = 882;
+# Woodcrown
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71053,10;71225,10;71254,10' WHERE spawn_point_id = 881;
+# Grey Golem
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71051,10;71227,10;71255,10' WHERE spawn_point_id = 880;
+# Lava Golem
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71050,10;71228,10;71256,10' WHERE spawn_point_id = 878;
+
+# Dragonlord
+# 150 Wyvern
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71857,1;71858,1' WHERE spawn_point_id = 1503;
+# 155 Spider
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71860,1;71861,1' WHERE spawn_point_id = 1504;
+# 160 Boggan
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71863,1;71864,1' WHERE spawn_point_id = 1505;
+# 165 Boggan
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71866,1;71867,1' WHERE spawn_point_id = 1506;
+# 170 Firbolg
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71869,1;71870,1' WHERE spawn_point_id = 1507;
+# 180 Troll
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '71872,1;71873,1' WHERE spawn_point_id = 1508;
+
+# Exalted Dragonlord
+# 185 Curr
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '103006,1;103007,1' WHERE spawn_point_id = 3059;
+# 190 Wizard
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '103009,1;103010,1' WHERE spawn_point_id = 3254;
+# 195 Automaton
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '103012,1;103013,1' WHERE spawn_point_id = 3398;
+# 200 Imp
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '103015,1;103016,1' WHERE spawn_point_id = 3420;
+# 205 Hexwyrm
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '103018,1;103019,1' WHERE spawn_point_id = 3624;
+# 210 Automaton
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '103021,1;103022,1' WHERE spawn_point_id = 3625;
+# 215 Eye
+UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '103024,1;103025,1' WHERE spawn_point_id = 3787;
 ```
