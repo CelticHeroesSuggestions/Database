@@ -1,0 +1,1850 @@
+<!-- The Yulefather -->
+
+<xml>
+
+<start>
+<startCondition>STAGE_AVAILABLE 460 1</startCondition>
+<startGoto>SANTA_GOT_PRESENTS_GREEN</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 460</startCondition>
+<startGoto>SANTA_CURRENT_GREEN</startGoto>
+</start>
+<!-- 
+<start>
+<startCondition>QUEST_AVAILABLE 460 0</startCondition>
+<startGoto>SANTA_OPEN_QUEST_GREEN</startGoto>
+</start> -->
+
+<start>
+<startCondition>STAGE_AVAILABLE 459 1</startCondition>
+<startGoto>SANTA_GOT_PRESENTS_RED</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 459</startCondition>
+<startGoto>SANTA_CURRENT_RED</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1326 1</startCondition>
+<startGoto>TURN_IN_WHITE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1325 1</startCondition>
+<startGoto>TURN_IN_BLACK</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1324 1</startCondition>
+<startGoto>TURN_IN_PURPLE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1323 1</startCondition>
+<startGoto>TURN_IN_BLUE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1322 1</startCondition>
+<startGoto>TURN_IN_TURQUOISE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1321 1</startCondition>
+<startGoto>TURN_IN_GREEN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1320 1</startCondition>
+<startGoto>TURN_IN_YELLOW</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1319 1</startCondition>
+<startGoto>TURN_IN_ORANGE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1318 1</startCondition>
+<startGoto>TURN_IN_PINK</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1317 1</startCondition>
+<startGoto>TURN_IN_RED</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1316 1</startCondition>
+<startGoto>TURN_IN_WHITE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1315 1</startCondition>
+<startGoto>TURN_IN_BLACK</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1314 1</startCondition>
+<startGoto>TURN_IN_PURPLE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1313 1</startCondition>
+<startGoto>TURN_IN_BLUE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1312 1</startCondition>
+<startGoto>TURN_IN_TURQUOISE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1311 1</startCondition>
+<startGoto>TURN_IN_GREEN</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1310 1</startCondition>
+<startGoto>TURN_IN_YELLOW</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1309 1</startCondition>
+<startGoto>TURN_IN_ORANGE</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1308 1</startCondition>
+<startGoto>TURN_IN_PINK</startGoto>
+</start>
+
+<start>
+<startCondition>STAGE_AVAILABLE 1307 1</startCondition>
+<startGoto>TURN_IN_RED</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1326</startCondition>
+<startGoto>DIADEM_CURRENT_WHITE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1325</startCondition>
+<startGoto>DIADEM_CURRENT_BLACK</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1324</startCondition>
+<startGoto>DIADEM_CURRENT_PURPLE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1323</startCondition>
+<startGoto>DIADEM_CURRENT_BLUE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1322</startCondition>
+<startGoto>DIADEM_CURRENT_TURQUOISE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1321</startCondition>
+<startGoto>DIADEM_CURRENT_GREEN</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1320</startCondition>
+<startGoto>DIADEM_CURRENT_YELLOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1319</startCondition>
+<startGoto>DIADEM_CURRENT_ORANGE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1318</startCondition>
+<startGoto>DIADEM_CURRENT_PINK</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1317</startCondition>
+<startGoto>DIADEM_CURRENT_RED</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1316</startCondition>
+<startGoto>DIADEM_CURRENT_WHITE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1315</startCondition>
+<startGoto>DIADEM_CURRENT_BLACK</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1314</startCondition>
+<startGoto>DIADEM_CURRENT_PURPLE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1313</startCondition>
+<startGoto>DIADEM_CURRENT_BLUE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1312</startCondition>
+<startGoto>DIADEM_CURRENT_TURQUOISE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1311</startCondition>
+<startGoto>DIADEM_CURRENT_GREEN</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1310</startCondition>
+<startGoto>DIADEM_CURRENT_YELLOW</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1309</startCondition>
+<startGoto>DIADEM_CURRENT_ORANGE</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1308</startCondition>
+<startGoto>DIADEM_CURRENT_PINK</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_CURRENT 1307</startCondition>
+<startGoto>DIADEM_CURRENT_RED</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_NOT_COMPLETE 1307</startCondition>
+<startGoto>OPEN_1</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 460</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1316</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1315</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1314</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1313</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1312</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1311</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1310</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1309</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<start>
+<startCondition>QUEST_AVAILABLE 1308</startCondition>
+<startGoto>OPEN_FIRST</startGoto>
+</start>
+
+<!--
+<start>
+<startCondition></startCondition>
+<startGoto></startGoto>
+</start>
+-->
+
+<line>
+<lineTag>OPEN_1</lineTag>
+<lineText>Hello adventurer! I am the Yulefather! Usually I would greet you with gifts and cheer, however the fearsome ice dragon Natan Athach knocked my sleigh from the sky and all my presents fell to the ground - if you recover them, I'll reward you with a fantastic Diadem of Ice!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1307</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Reveller's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_RED</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1317</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Reveller's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_RED</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1308</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Adventurer's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_PINK</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1318</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Adventurer's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_PINK</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Diadems of Ice.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>HAT_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1309</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1309</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1319</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1319</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_2</lineTag>
+<lineText>The fearsome ice dragon Natan Athach knocked my sleigh from the sky and all my presents fell to the ground - if you recover them, I'll reward you with a fantastic Diadem of Ice!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1309</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Scholar's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_ORANGE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1319</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Scholar's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_ORANGE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1310</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Courtier's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_YELLOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1320</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Courtier's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_YELLOW</choiceGoto>
+</choice>
+<choice>
+<choiceText>Previous.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1311</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_3</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1311</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_3</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1321</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_3</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1321</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_3</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_3</lineTag>
+<lineText>The fearsome ice dragon Natan Athach knocked my sleigh from the sky and all my presents fell to the ground - if you recover them, I'll reward you with a fantastic Diadem of Ice!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1311</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Magister's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_GREEN</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1321</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Magister's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_GREEN</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1312</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Noble's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_TURQUOISE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1322</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Noble's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_TURQUOISE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Previous.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1313</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_4</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1313</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_4</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1323</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_4</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1323</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_4</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_4</lineTag>
+<lineText>The fearsome ice dragon Natan Athach knocked my sleigh from the sky and all my presents fell to the ground - if you recover them, I'll reward you with a fantastic Diadem of Ice!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1313</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Lord's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLUE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1323</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Lord's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLUE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1314</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Prince's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_PURPLE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1324</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Prince's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_PURPLE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Previous.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_3</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1315</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_5</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1315</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_5</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1325</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_5</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 1325</choiceCondition>
+<choiceText>Next.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_5</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_5</lineTag>
+<lineText>The fearsome ice dragon Natan Athach knocked my sleigh from the sky and all my presents fell to the ground - if you recover them, I'll reward you with a fantastic Diadem of Ice!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1315</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Queen's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLACK</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1325</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Queen's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLACK</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1316</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>King's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_WHITE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1326</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>King's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_WHITE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Previous.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_4</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested? I also have Yuletide Helper's Hats!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 459</choiceCondition>
+<choiceText>What about a Helper Hat?</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>SANTA_OPEN_QUEST_RED</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 460</choiceCondition>
+<choiceText>What about a Helper Hat?</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>SANTA_OPEN_QUEST_GREEN</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1308</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Adventurer's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_PINK</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1309</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Scholar's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_ORANGE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1310</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Courtier's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_YELLOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1311</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Magister's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_GREEN</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1312</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Noble's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_TURQUOISE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1313</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Lord's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLUE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1314</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Prince's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_PURPLE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1315</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Queen's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLACK</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1316</choiceCondition>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>King's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_WHITE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+
+<!-- SANTA HATS -->
+
+<line>
+<lineTag>SANTA_OPEN_QUEST_RED</lineTag>
+<lineText>Merry Yuletide, friend! Yule is the celebration of Winter - a time to embrace the cold, to spend time with our family and friends, to feast and make merry around a roaring fire. Of course, Yule is also a time for giving gifts to all the good boys and girls. However, that's where I have a slight problem.</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Yulefather</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_QUEST_RED</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_QUEST_RED</lineTag>
+<lineText>I was travelling over Lir's Reach on my magic sled, pulled by the flying boars you see before you, when all of a sudden I was blown off course by a strong wind that spilled all of my presents over the land below! If you help by bringing me five Red Yuletude Presents from around Farcrag Castle, then I'll give you a Yuletide Hat as a reward!</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>SANTA_QUEST_ADD 459</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_GOT_PRESENTS_RED</lineTag>
+<lineText>Have you managed to find five Red Yuletide Presents, [name]?</lineText>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here they are.</choiceText>
+<choiceAction>STAGE_COMPLETE 459 1</choiceAction>
+<choiceGoto>SANTA_GOT_PRESENTS_RED_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_GOT_PRESENTS_RED_2</lineTag>
+<lineText>Good work, [name]! Here's a nice Yuletide Hat for your troubles. Thanks for finding my Red Yuletide Presents, but my Green Yuletide Presents are still missing. Perhaps you'd like to help me again?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Present Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_OPEN_QUEST_GREEN</lineTag>
+<lineText>My Green Yuletide Presents were scattered all over Lir's Reach when my sled got blown off course! There are a lot of missing presents out there, [name], and I have special Yuletide Helper's Hats for anyone who helps me find them. Perhaps you'd like to help me?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Present Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_OPEN_QUEST_GREEN_2</lineTag>
+<lineText>Bring me ten Green Yuletide Presents and I'll give you a coloured Yuletide Helper's Hat as a reward. I'll have a rummage in my bag and pull out the first hat I find, so I can't say which colour you'll get - some are rarer than others! Will you get those presents for me?</lineText>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText>Yuletide Helper's Hats.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_HAT_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 460</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_HAT_INFO</lineTag>
+<lineText>The green Yuletide Helper's Hat is the most common hat I have. The red and orange hats are both quite common, and the yellow hat is the next most common after that. The pink hat is rare, the turquoise hat even more so. The blue hat is the third rarest hat I have, and the purple hat is the second rarest. The black hat is the rarest I have - if you get one of those, you'll be very lucky!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 460</choiceCondition>
+<choiceOptions></choiceOptions>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 460</choiceCondition>
+<choiceOptions></choiceOptions>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_CURRENT_GREEN</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_GOT_PRESENTS_GREEN</lineTag>
+<lineText>Have you managed to find ten Green Yuletide Presents, [name]?</lineText>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here they are.</choiceText>
+<choiceAction>STAGE_COMPLETE 460 1</choiceAction>
+<choiceGoto>SANTA_GOT_PRESENTS_GREEN_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_GOT_PRESENTS_GREEN_2</lineTag>
+<lineText>Good work, [name]! Here's a nice Yuletide Helper's Hat for your troubles. There are still a lot of Green Yuletide Presents out there though. Perhaps you'd like to help me again?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Present Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_CURRENT_RED</lineTag>
+<lineText>I was travelling over Lir's Reach on my magic sled, pulled by the flying boars you see before you, when all of a sudden I was blown off course by a strong wind that spilled all of my presents over the land below! If you help by bringing me five Red Yuletude Presents from around Farcrag Castle, then I'll give you a Yuletide Hat as a reward!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SANTA_CURRENT_GREEN</lineTag>
+<lineText>Have you found many Green Yuletide Presents yet, [name]? I dropped them all over Lir's Reach when I was blown off course! If you bring me ten Green Yuletide Presents, I'll give you a random Yuletide Helper's Hat as a reward.</lineText>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText>Yuletide Helper's Hats.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>SANTA_HAT_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+
+<!--
+<line>
+<lineTag>OPEN_FIRST_ORANGE</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Scholar's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_ORANGE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST_YELLOW</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Courtier's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_YELLOW</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST_GREEN</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Magister's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_GREEN</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST_TURQUOISE</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Noble's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_TURQUOISE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST_BLUE</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Lord's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLUE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST_PURPLE</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Prince's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_PURPLE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST_BLACK</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>Queen's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_BLACK</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_FIRST_WHITE</lineTag>
+<lineText>Merry Yuletide, [class]! Thank you for helping me to recover those presents. I have another Diadem of Ice for you to earn, if you're interested?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>King's Diadem of Ice</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_WHITE</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another Diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+-->
+
+<line>
+<lineTag>QUEST_RED</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me five Green Yuletide Presents, I'll give you a Reveller's Diadem of Ice, which is red in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1307</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1307</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1317</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1317</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_PINK</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me ten Green Yuletide Presents, I'll give you an Adventurer's Diadem of Ice, which is pink in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1308</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1308</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1318</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1318</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_ORANGE</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me twenty Green Yuletide Presents, I'll give you a Scholar's Diadem of Ice, which is orange in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1309</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1309</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1319</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1319</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_YELLOW</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me thirty Green Yuletide Presents, I'll give you a Courtier's Diadem of Ice, which is yellow in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1310</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1310</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1320</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1320</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_GREEN</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me forty Green Yuletide Presents, I'll give you a Magister's Diadem of Ice, which is green in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1311</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1311</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1321</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1321</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_TURQUOISE</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me fifty Green Yuletide Presents, I'll give you a Noble's Diadem of Ice, which is turquoise in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1312</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1312</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1322</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1322</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_BLUE</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me sixty Green Yuletide Presents, I'll give you a Lord's Diadem of Ice, which is blue in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1313</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1313</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1323</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1323</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_PURPLE</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me seventy Green Yuletide Presents, I'll give you a Prince's Diadem of Ice, which is purple in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1314</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1314</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1324</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1324</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_BLACK</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me one hundred Green Yuletide Presents, I'll give you a Queen's Diadem of Ice, which is black in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1315</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1315</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1325</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1325</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_WHITE</lineTag>
+<lineText>My presents are scattered all across Lir's Reach, though some also found their way into Farcrag Castle, the Tavern, and the Arena. If you bring me one hundred and fifty Green Yuletide Presents, I'll give you a King's Diadem of Ice, which is white in colour.</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1316</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1316</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 1326</choiceCondition>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 1326</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>Choose another diadem.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_RED</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me five Green Yuletide Presents, I'll give you a Reveller's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_PINK</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me ten Green Yuletide Presents, I'll give you a Adventurer's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_ORANGE</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me twenty Green Yuletide Presents, I'll give you an Scholar's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_YELLOW</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me thirty Green Yuletide Presents, I'll give you a Courtier's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_GREEN</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me forty Green Yuletide Presents, I'll give you a Magister's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_TURQUOISE</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me fifty Green Yuletide Presents, I'll give you a Noble's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_BLUE</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me sixty Green Yuletide Presents, I'll give you a Lord's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_PURPLE</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me seventy Green Yuletide Presents, I'll give you a Prince's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_BLACK</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me one hundred Green Yuletide Presents, I'll give you a Queen's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DIADEM_CURRENT_WHITE</lineTag>
+<lineText>You can find Yuletide Presents scattered around Farcrag Castle, Lir's Reach, the Arena and the Tavern. If you bring me one hundred and fifty Green Yuletide Presents, I'll give you a King's Diadem of Ice.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_RED</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected five Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1307 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1307 1</choiceAction>
+<choiceGoto>DISMISS_RED</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1317 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1317 1</choiceAction>
+<choiceGoto>DISMISS_RED</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_PINK</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected ten Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1308 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1308 1</choiceAction>
+<choiceGoto>DISMISS_PINK</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1318 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1318 1</choiceAction>
+<choiceGoto>DISMISS_PINK</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_ORANGE</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected twenty Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1309 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1309 1</choiceAction>
+<choiceGoto>DISMISS_ORANGE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1319 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1319 1</choiceAction>
+<choiceGoto>DISMISS_ORANGE</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_YELLOW</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected forty Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1310 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1310 1</choiceAction>
+<choiceGoto>DISMISS_YELLOW</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1320 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1320 1</choiceAction>
+<choiceGoto>DISMISS_YELLOW</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_GREEN</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected eighty Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1311 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1311 1</choiceAction>
+<choiceGoto>DISMISS_GREEN</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1321 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1321 1</choiceAction>
+<choiceGoto>DISMISS_GREEN</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_TURQUOISE</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected one hundred and fifty Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1312 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1312 1</choiceAction>
+<choiceGoto>DISMISS_TURQUOISE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1322 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1322 1</choiceAction>
+<choiceGoto>DISMISS_TURQUOISE</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_BLUE</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected two hundred and fifty Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1313 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1313 1</choiceAction>
+<choiceGoto>DISMISS_BLUE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1323 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1323 1</choiceAction>
+<choiceGoto>DISMISS_BLUE</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_PURPLE</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected four hundred Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1314 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1314 1</choiceAction>
+<choiceGoto>DISMISS_PURPLE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1324 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1324 1</choiceAction>
+<choiceGoto>DISMISS_PURPLE</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_BLACK</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected six hundred Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1315 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1315 1</choiceAction>
+<choiceGoto>DISMISS_BLACK</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1325 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1325 1</choiceAction>
+<choiceGoto>DISMISS_BLACK</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>TURN_IN_WHITE</lineTag>
+<lineText>I am glad to see you again, friend. Have you collected one thousand Yuletide Presents?</lineText>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1316 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1316 1</choiceAction>
+<choiceGoto>DISMISS_WHITE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>STAGE_AVAILABLE 1326 1</choiceCondition>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Here are the presents.</choiceText>
+<choiceAction>STAGE_COMPLETE 1326 1</choiceAction>
+<choiceGoto>DISMISS_WHITE</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_RED</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Reveller's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_PINK</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Adventurer's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_ORANGE</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Scholar's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_YELLOW</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Courtier's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_GREEN</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Magister's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_TURQUOISE</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Noble's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_BLUE</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Lord's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_PURPLE</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Prince's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_BLACK</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this Queen's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found, and I'll have a new type of Diadem for you to earn!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>DISMISS_WHITE</lineTag>
+<lineText>Well done, [name]! I am glad to have these presents back where they belong, they will surely help to make the Yuletide Celebrations all the merrier! Please accept this King's Diadem of Ice as a reward, and come back to me soon - there are lots of presents out there still to be found!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Farewell.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>HAT_INFO</lineTag>
+<lineText>I make the Diadems of Ice by collecting the ice crystals that form in the Dansyren - the great lights seen in the night sky during winter. In addition to a range of colours, some rare diadems are imbued with sparks of magic, or with the freezing winter snows. The luckiest of adventurers may find themselves rewarded with one of these rare diadems.</lineText>
+<choice>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_1</choiceGoto>
+</choice>
+</line>
+
+<!--
+<line>
+<lineTag>OPEN_QUEST_RED</lineTag>
+<lineText>Merry Yuletide, friend! Yule is the celebration of Winter - a time to embrace the cold, to spend time with our family and friends, to feast and make merry around a roaring fire. Of course, Yule is also a time for giving gifts to all the good boys and girls. However, that's where I have a slight problem.</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Yulefather</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>QUEST_RED</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>QUEST_RED</lineTag>
+<lineText>I was travelling over Lir's Reach on my magic sled, pulled by the flying boars you see before you, when all of a sudden I was blown off course by a strong wind that spilled all of my presents over the land below! If you help by bringing me five Red Yuletude Presents from around Farcrag Castle, then I'll give you a Yuletide Hat as a reward!</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 459</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_PRESENTS_RED</lineTag>
+<lineText>Have you managed to find five Yuletide Presents, [name]?</lineText>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here they are.</choiceText>
+<choiceAction>STAGE_COMPLETE 459 1</choiceAction>
+<choiceGoto>GOT_PRESENTS_RED_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_PRESENTS_RED_2</lineTag>
+<lineText>Good work, [name]! Here's a nice Yuletide Hat for your troubles. Thanks for finding my Yuletide Presents, but my Green Yuletide Presents are still missing. Perhaps you'd like to help me again?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Present Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_GREEN</lineTag>
+<lineText>My Green Yuletide Presents were scattered all over Lir's Reach when my sled got blown off course! There are a lot of missing presents out there, [name], and I have special Yuletide Helper's Hats for anyone who helps me find them. Perhaps you'd like to help me?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Present Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_QUEST_GREEN_2</lineTag>
+<lineText>Bring me ten Green Yuletide Presents and I'll give you a coloured Yuletide Helper's Hat as a reward. I'll have a rummage in my bag and pull out the first hat I find, so I can't say which colour you'll get - some are rarer than others! Will you get those presents for me?</lineText>
+<choice>
+<choiceText>Yuletide Helper's Hats.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>HAT_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction>QUEST_ADD 460</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+<choice>
+<choiceText>[N]I can't help right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>HAT_INFO</lineTag>
+<lineText>The green Yuletide Helper's Hat is the most common hat I have. The red and orange hats are both quite common, and the yellow hat is the next most common after that. The pink hat is rare, the turquoise hat even more so. The blue hat is the third rarest hat I have, and the purple hat is the second rarest. The black hat is the rarest I have - if you get one of those, you'll be very lucky!</lineText>
+<choice>
+<choiceCondition>QUEST_AVAILABLE 460</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>QUEST_CURRENT 460</choiceCondition>
+<choiceText>Return.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>CURRENT_GREEN</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_PRESENTS_GREEN</lineTag>
+<lineText>Have you managed to find ten Green Yuletide Presents, [name]?</lineText>
+<choice>
+<choiceOptions>[C]</choiceOptions>
+<choiceText>Yes, here they are.</choiceText>
+<choiceAction>STAGE_COMPLETE 460 1</choiceAction>
+<choiceGoto>GOT_PRESENTS_GREEN_2</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>GOT_PRESENTS_GREEN_2</lineTag>
+<lineText>Good work, [name]! Here's a nice Yuletide Helper's Hat for your troubles. There are still a lot of Green Yuletide Presents out there though. Perhaps you'd like to help me again?</lineText>
+<choice>
+<choiceOptions>[Q]</choiceOptions>
+<choiceText>The Present Hunt</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_QUEST_GREEN_2</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_RED</lineTag>
+<lineText>I was travelling over Lir's Reach on my magic sled, pulled by the flying boars you see before you, when all of a sudden I was blown off course by a strong wind that spilled all of my presents over the land below! If you help by bringing me five Red Yuletude Presents from around Farcrag Castle, then I'll give you a Yuletide Hat as a reward!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>CURRENT_GREEN</lineTag>
+<lineText>Have you found many Green Yuletide Presents yet, [name]? I dropped them all over Lir's Reach when I was blown off course! If you bring me ten Green Yuletide Presents, I'll give you a random Yuletide Helper's Hat as a reward.</lineText>
+<choice>
+<choiceText>Yuletide Helper's Hats.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>HAT_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>I'll get the presents.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+-->
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
+
+</xml>
