@@ -14,4 +14,9 @@ UPDATE ch_live_unitydatadb.spawn_points SET monster_list = '70201,1' WHERE spawn
 UPDATE ch_live_unitydatadb.mob_loot_sets SET num_drops = 5 WHERE mob_template_id = 70199;
 UPDATE ch_live_unitydatadb.mob_loot_sets SET num_drops = 5 WHERE mob_template_id = 70200;
 UPDATE ch_live_unitydatadb.mob_loot_sets SET num_drops = 5 WHERE mob_template_id = 70201;
+
+# Reduce boss damage
+UPDATE ch_live_unitydatadb.mob_templates SET damage_list = '1,20' WHERE mob_template_id = 70199;  # formerly '1,186'
+UPDATE ch_live_unitydatadb.mob_templates SET damage_list = '1,25' WHERE mob_template_id = 70200;  # formerly '1,212'
+UPDATE ch_live_unitydatadb.mob_templates SET damage_list = '1,30' WHERE mob_template_id = 70201;  # formerly '1,238'
 ```
