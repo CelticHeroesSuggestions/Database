@@ -91,14 +91,46 @@ VALUES (100001, 2, 57248, -1, 5);
 # eternal flight of guarding (armor)
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
 VALUES (100001, 2, 57258, -1, 6);
-# 
 # platinum lockbox
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
 VALUES (100001, 2, 34784, -1, 7);
+# Dragonfire Fists
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (100001, 2, 51681, -1, 8);
+# Archfyre Fists
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (100001, 2, 54926, -1, 9);
+# Everlasting Fireworks
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (100001, 2, 53644, -1, 10);
 
-# update the platinum lockbox buy and sell prices (so it can be in the shop)
-UPDATE ch_live_unitydatadb.item_templates SET buy_price = 100 WHERE item_id = 34784;
-UPDATE ch_live_unitydatadb.item_templates SET sell_price = 200 WHERE item_id = 34784;
+# Set the Everlasting Fireworks cooldown to 0
+INSERT INTO ch_live_unitydatadb.item_cooldowns (item_id, cooldown)
+VALUES (53644, 0);
+
+# update the Flight of Vitality buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000 WHERE item_id = 57248;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 20000 WHERE item_id = 57248;
+
+# update the Flight of Guarding buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000 WHERE item_id = 57258;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 20000 WHERE item_id = 57258;
+
+# update the Platinum Lockbox buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 1000 WHERE item_id = 34784;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 2000 WHERE item_id = 34784;
+
+# update the Dragonfire Fists buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 25000 WHERE item_id = 51681;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 50000 WHERE item_id = 51681;
+
+# update the Archfyre Fists buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 25000 WHERE item_id = 54926;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 50000 WHERE item_id = 54926;
+
+# update the Everlasting Fireworks buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000 WHERE item_id = 53644;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 20000 WHERE item_id = 53644;
 
 # add the buy/sell price multipliers for item types
 INSERT INTO ch_live_unitydatadb.shop_subtype_prices (zone_id, shop_id, sub_type_id, buy_price_multiplier, sell_price_multiplier)
