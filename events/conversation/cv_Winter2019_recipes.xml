@@ -1,0 +1,206 @@
+<xml>
+
+<start>
+<startCondition>HAVE_ITEM 60652 1</startCondition>
+<startCondition>HAVE_ITEM 65844 1</startCondition>
+<startCondition>QUEST_NOT_COMPLETE 3213</startCondition>
+<startGoto>OPEN_SUNKING</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 60661 1</startCondition>
+<startCondition>HAVE_ITEM 65844 1</startCondition>
+<startCondition>QUEST_NOT_COMPLETE 3214</startCondition>
+<startGoto>OPEN_CHRISTMASCOOKIES</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 60666 1</startCondition>
+<startCondition>HAVE_ITEM 65844 1</startCondition>
+<startCondition>QUEST_NOT_COMPLETE 3215</startCondition>
+<startGoto>OPEN_RICEPUDDING</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 60669 1</startCondition>
+<startCondition>HAVE_ITEM 65844 1</startCondition>
+<startCondition>QUEST_NOT_COMPLETE 3216</startCondition>
+<startGoto>OPEN_CHRISTMASCAKE</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 60671 1</startCondition>
+<startCondition>HAVE_ITEM 65844 1</startCondition>
+<startCondition>QUEST_NOT_COMPLETE 3217</startCondition>
+<startGoto>OPEN_SPICEDBEEF</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 60674 1</startCondition>
+<startCondition>HAVE_ITEM 65844 1</startCondition>
+<startCondition>QUEST_NOT_COMPLETE 3218</startCondition>
+<startGoto>OPEN_YULEROAST</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 65844 1</startCondition>
+<startGoto>OPEN_CANDYCANE</startGoto>
+</start>
+
+
+<line>
+<lineTag>OPEN_QUEST</lineTag>
+<lineText>Greetings good traveller, you look like a person with a refined culinary palette.
+
+My name is [FF00FF]Gel Fiorun[-], I have been travelling these lands looking for new recipes and ingredients for my latest Yule creations.
+
+If you stumble across any fascinating ingredients please do come and let me know. Perhaps we can work out a way to incorporate it into some recipes you already know.</lineText>
+<choice>
+<choiceConditions>HAVE_ITEM 68544 1</choiceConditions>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>What about this?</choiceText>
+<choiceGoto>OPEN_CANDYCANE</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_CANDYCANE</lineTag>
+<lineText>A Crushed Candy Cane! A most fascinating ingredient!
+
+I wonder what dishes we could utilise this ingredient with. Cook me a treat we can sweeten!</lineText>
+<choice>
+<choiceText>I'll bring you something.</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+
+<line>
+<lineTag>OPEN_SUNKING</lineTag>
+<lineText>Ah Broth! Incredible, this flavor pairing will do wonders! Here you go, a recipe for my latest creation.</lineText>
+<choice>
+<choiceText>Thank you.</choiceText>
+<choiceAction>QUEST_ADD 3213</choiceAction>
+<choiceGoto>OPEN_SUNKING_2</choiceGoto>
+</choice>
+</line>
+<line>
+<lineTag>OPEN_SUNKING_2</lineTag>
+<lineText>Make delicous food, share it with the world, and spread joy my friend.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get cooking.</choiceText>
+<choiceAction>STAGE_COMPLETE 3213 0</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_CHRISTMASCOOKIES</lineTag>
+<lineText>Ah Shortbread! Incredible, this flavor pairing will do wonders! Here you go, a recipe for my latest creation.</lineText>
+<choice>
+<choiceText>Thank you.</choiceText>
+<choiceAction>QUEST_ADD 3214</choiceAction>
+<choiceGoto>OPEN_CHRISTMASCOOKIES_2</choiceGoto>
+</choice>
+</line>
+<line>
+<lineTag>OPEN_CHRISTMASCOOKIES_2</lineTag>
+<lineText>Make delicous food, share it with the world, and spread joy my friend.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get cooking.</choiceText>
+<choiceAction>STAGE_COMPLETE 3214 0</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_RICEPUDDING</lineTag>
+<lineText>Ah Sweet Porridge! Incredible, this flavor pairing will do wonders! Here you go, a recipe for my latest creation.</lineText>
+<choice>
+<choiceText>Thank you.</choiceText>
+<choiceAction>QUEST_ADD 3215</choiceAction>
+<choiceGoto>OPEN_RICEPUDDING_2</choiceGoto>
+</choice>
+</line>
+<line>
+<lineTag>OPEN_RICEPUDDING_2</lineTag>
+<lineText>Make delicous food, share it with the world, and spread joy my friend.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get cooking.</choiceText>
+<choiceAction>STAGE_COMPLETE 3215 0</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_CHRISTMASCAKE</lineTag>
+<lineText>Ah Fruit Cake! Incredible, this flavor pairing will do wonders! Here you go, a recipe for my latest creation.</lineText>
+<choice>
+<choiceText>Thank you.</choiceText>
+<choiceAction>QUEST_ADD 3216</choiceAction>
+<choiceGoto>OPEN_CHRISTMASCAKE_2</choiceGoto>
+</choice>
+</line>
+<line>
+<lineTag>OPEN_CHRISTMASCAKE_2</lineTag>
+<lineText>Make delicous food, share it with the world, and spread joy my friend.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get cooking.</choiceText>
+<choiceAction>STAGE_COMPLETE 3216 0</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_SPICEDBEEF</lineTag>
+<lineText>Ah Roast Beef! Incredible, this flavor pairing will do wonders! Here you go, a recipe for my latest creation.</lineText>
+<choice>
+<choiceText>Thank you.</choiceText>
+<choiceAction>QUEST_ADD 3217</choiceAction>
+<choiceGoto>OPEN_SPICEDBEEF_2</choiceGoto>
+</choice>
+</line>
+<line>
+<lineTag>OPEN_SPICEDBEEF_2</lineTag>
+<lineText>Make delicous food, share it with the world, and spread joy my friend.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get cooking.</choiceText>
+<choiceAction>STAGE_COMPLETE 3217 0</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_YULEROAST</lineTag>
+<lineText>Ah Boar Roast! Incredible, this flavor pairing will do wonders! Here you go, a recipe for my latest creation.</lineText>
+<choice>
+<choiceText>Thank you.</choiceText>
+<choiceAction>QUEST_ADD 3218</choiceAction>
+<choiceGoto>OPEN_YULEROAST_2</choiceGoto>
+</choice>
+</line>
+<line>
+<lineTag>OPEN_YULEROAST_2</lineTag>
+<lineText>Make delicous food, share it with the world, and spread joy my friend.</lineText>
+<choice>
+<choiceOptions>[Y]</choiceOptions>
+<choiceText>I'll get cooking.</choiceText>
+<choiceAction>STAGE_COMPLETE 3218 0</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+
+
+</xml>
