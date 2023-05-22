@@ -88,25 +88,46 @@ VALUES (100001, 2, 15018, -1, 4);
 # eternal flight of vitality (+15% hp)
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
 VALUES (100001, 2, 57248, -1, 5);
+# eternal flight of replenishment (health regen)
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (100001, 2, 57238, -1, 6);
+# eternal flight of focus (+15% en)
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (100001, 2, 57253, -1, 7);
+# eternal flight of rejuvination (energy regen)
+INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
+VALUES (100001, 2, 57243, -1, 8);
 # eternal flight of guarding (armor)
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (100001, 2, 57258, -1, 6);
+VALUES (100001, 2, 57258, -1, 9);
 # platinum lockbox
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (100001, 2, 34784, -1, 7);
+VALUES (100001, 2, 34784, -1, 10);
 # Dragonfire Fists
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (100001, 2, 51681, -1, 8);
+VALUES (100001, 2, 51681, -1, 11);
 # Archfyre Fists
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (100001, 2, 54926, -1, 9);
+VALUES (100001, 2, 54926, -1, 12);
 # Everlasting Fireworks
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
-VALUES (100001, 2, 53644, -1, 10);
+VALUES (100001, 2, 53644, -1, 13);
 
 # Set the Everlasting Fireworks cooldown to 0
 INSERT INTO ch_live_unitydatadb.item_cooldowns (item_id, cooldown)
 VALUES (53644, 0);
+
+# update the Flight of Focus buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000 WHERE item_id = 57253;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 20000 WHERE item_id = 57253;
+
+# update the Flight of Rejuvination buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000 WHERE item_id = 57243;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 20000 WHERE item_id = 57243;
+
+# update the Flight of Replenishment buy and sell prices (so it can be in the shop)
+UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000 WHERE item_id = 57238;
+UPDATE ch_live_unitydatadb.item_templates SET sell_price = 20000 WHERE item_id = 57238;
 
 # update the Flight of Vitality buy and sell prices (so it can be in the shop)
 UPDATE ch_live_unitydatadb.item_templates SET buy_price = 10000 WHERE item_id = 57248;
