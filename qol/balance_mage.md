@@ -14,6 +14,11 @@ UPDATE ch_live_unitydatadb.skill_templates SET casting_range = 12 WHERE skill_id
 # increase Frostbite cast range
 UPDATE ch_live_unitydatadb.skill_templates SET casting_range = 12 WHERE skill_id = 222;
 
+# increase energy boost duration
+UPDATE ch_live_unitydatadb.status_effect_levels SET duration = 600 WHERE status_effect_template_id = 28;
+# increase cloak of fire duration
+UPDATE ch_live_unitydatadb.status_effect_levels SET duration = 600 WHERE status_effect_template_id = 6;
+
 # increase Ice Shards damage for non-PvP
 # at level 50 with 500foc and 8000ability, IS does 6474/(15+1)=405 and FB does 4462/(6.5)=686), so FB has a 70% gain
 # therefore, increase Ice Shards damage by 1.8x to make the DPS comparable. NOT INCLUDING PVP!
