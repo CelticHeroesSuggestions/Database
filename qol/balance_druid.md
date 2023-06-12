@@ -1,7 +1,7 @@
 # Druid Balancing: Skill and Gear Changes
 
 * What: Update druid skills and gear to fix minor issues
-* Why: Druids have some questionable gear and skills, that would be easy for DECA to update for immediate improvements.
+* Why: Druids have some questionable gear and skills, that would be easy to update for immediate improvements.
 * Notes: This does not include a comprehensive staff redo, which is sorely needed. My idea for staffs is to make them superior to druid totem/offhands for casters (so totem have a place for melee-assisted DPS), giving regen/stats/skill points.
 * Changes:
 ```
@@ -13,6 +13,15 @@ UPDATE ch_live_unitydatadb.item_templates SET class_requirement_list = '2,3' WHE
 # add Energy Boost tome to druid skill shop
 INSERT INTO ch_live_unitydatadb.shop_stock (shop_id, zone_id, item_id, stock_level, sort_order)
 VALUES (6, 93, 1056, -1, 1);
+
+# increase duration of Nature's Embrace
+UPDATE ch_live_unitydatadb.status_effect_levels SET duration = 300 WHERE status_effect_template_id = 15;
+# increase duration of Shield of Bark
+UPDATE ch_live_unitydatadb.status_effect_levels SET duration = 600 WHERE status_effect_template_id = 14;
+# increase duration of Bless
+UPDATE ch_live_unitydatadb.status_effect_levels SET duration = 600 WHERE status_effect_template_id = 140;
+# increase duration of Abundance
+UPDATE ch_live_unitydatadb.status_effect_levels SET duration = 600 WHERE status_effect_template_id = 13;
 ```
 
 Update the spell tomes in `item_list.txt`
