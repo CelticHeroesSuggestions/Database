@@ -13,4 +13,10 @@ to
 # Lockjaw placeholder, add
 598,70623;1,43,0
 
+# Rotten Flesh mobs in Dustwither, add
+0,70057:1,37,0
+0,70058:1,37,0
+0,70059:1,37,0
+0,70060:1,37,0
+
 ```
