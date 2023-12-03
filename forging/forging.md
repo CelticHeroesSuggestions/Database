@@ -30,5 +30,12 @@ To the clientside `ability_list.txt`
 UPDATE recipes set recipe_name = "Connacht Vanquisher Breastplate", difficulty = 1, failure_item_reward = 17612, success_item_reward = 17612, critical_item_reward = 17612, master_item_reward = 17612, cost_id = 910 WHERE recipe_id = 71;
 ```
 10. Update the recipe cost in the `token_vendor_costs` SQL table
-11. Add the recipe to the clientside `recipes.txt`
-10. Enjoy!
+```
+# remove the existing costs
+DELETE FROM token_vendor_cost WHERE token_vendor_cost_id = 910;
+# add the cost
+INSERT INTO token_vendor_cost (token_vendor_cost_id, item_template_id, quantity) VALUES (910, 224, 1);
+# INSERT more costs here
+```
+12. Update the recipe on the clientside `recipes.txt`
+
