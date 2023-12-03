@@ -2,6 +2,8 @@
 
 Possible steps to make forging:
 
+### Adding the abilities
+
 1. Rename mob ID 922 to Forge, copy everything from the Oven mob but change conversation ID to 737.
 2. Add the mob to mob_list.txt, copy from Oven mob.
 3. Copy the cv_cooking_station_npc.txt conversation to cv_forging_station_npc.txt, change the content to be forging themed, use `FORGING` instead of `COOKING` and maybe remove the quest.
@@ -23,13 +25,16 @@ To the clientside `ability_list.txt`
 62,Alchemy
 ```
 
-7. Add the forging abilities to the server CraftingType enum
-8. Patch the conversation_lookup.txt, mob_list.txt, conversation_lookup.txt, ability_list.txt
-9. Add recipes to the SQL, can overwrite some DNU ones
+7. Add the forging abilities to the server CraftingType enum.
+8. Patch the conversation_lookup.txt, mob_list.txt, conversation_lookup.txt, ability_list.txt.
+
+### Adding recipes
+
+Add recipes to the SQL, can overwrite some DNU ones, for example `910`.
 ```
 UPDATE recipes set recipe_name = "Connacht Vanquisher Breastplate", difficulty = 1, failure_item_reward = 17612, success_item_reward = 17612, critical_item_reward = 17612, master_item_reward = 17612, cost_id = 910 WHERE recipe_id = 71;
 ```
-10. Update the recipe cost in the `token_vendor_costs` SQL table
+Update the recipe cost in the `token_vendor_costs` SQL table.
 ```
 # remove the existing costs
 DELETE FROM token_vendor_cost WHERE token_vendor_cost_id = 910;
@@ -37,5 +42,5 @@ DELETE FROM token_vendor_cost WHERE token_vendor_cost_id = 910;
 INSERT INTO token_vendor_cost (token_vendor_cost_id, item_template_id, quantity) VALUES (910, 224, 1);
 # INSERT more costs here
 ```
-12. Update the recipe on the clientside `recipes.txt`
+Add the recipe to the clientside `recipes.txt`, note that the recipe rewards are sent by the server so they do not matter in this file.
 
