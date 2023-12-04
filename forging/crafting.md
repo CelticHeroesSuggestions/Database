@@ -1,15 +1,39 @@
-## Forging
+## Crafting
 
-Possible steps to make forging:
+Possible steps to make crafting:
+
+### Adding the vendors
+
+Create the Forge, Crafting Table, and Cauldron mobs, can use IDs 922, 144, and 228. Copy from the Oven mob:
+```
+# Forging, replace ID 922
+DELETE FROM `mob_templates` WHERE `mob_template_id`=922;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (922, 'Forge', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 737, 0, 0, 0, 0, '', 0.3, 5, 4, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+
+# Crafting, replace ID 144
+DELETE FROM `mob_templates` WHERE `mob_template_id`=144;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (144, 'Workbench', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 737, 0, 0, 0, 0, '', 0.3, 5, 4, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+
+# Alchemy, replace ID 228
+DELETE FROM `mob_templates` WHERE `mob_template_id`=228;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (228, 'Cauldron', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 737, 0, 0, 0, 0, '', 0.3, 5, 4, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+```
+
+Add the vendors to the `token_vendors` SQL table:
+
+```
+INSERT INTO `token_vendors` (`token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES ('Forging', 93, 922, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES ('Crafting', 93, 144, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES ('Alchemy', 93, 228, 0, 0);
+```
 
 ### Adding the abilities
 
-1. Rename mob ID 922 to Forge, copy everything from the Oven mob but change conversation ID to 737.
-2. Add the mob to mob_list.txt, copy from Oven mob.
-3. Copy the cv_cooking_station_npc.txt conversation to cv_forging_station_npc.txt, change the content to be forging themed, use `FORGING` instead of `COOKING` and maybe remove the quest.
-4. Add the conversation to the conversation_lookup.txt
-5. Spawn the forge mob near blacksmith in castle.
-6. Add abilities Forging:60, Craftmanship:61, Alchemy:62
+Add the mob to mob_list.txt, copy from Oven mob.
+Copy the cv_cooking_station_npc.txt conversation to cv_forging_station_npc.txt, change the content to be forging themed, use `FORGING` instead of `COOKING` and maybe remove the quest.
+Add the conversation to the conversation_lookup.txt
+Spawn the forge mob near blacksmith in castle.
+Add abilities Forging:60, Craftmanship:61, Alchemy:62
 
 To the SQL `abilities` database:
 ```
@@ -25,8 +49,9 @@ To the clientside `ability_list.txt`
 62,Alchemy
 ```
 
-7. Add the forging abilities to the server CraftingType enum.
-8. Patch the conversation_lookup.txt, mob_list.txt, conversation_lookup.txt, ability_list.txt.
+Add the forging abilities to the server CraftingType enum.
+
+Patch the conversation_lookup.txt, mob_list.txt, conversation_lookup.txt, ability_list.txt.
 
 ### Adding recipes
 
