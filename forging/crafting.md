@@ -22,9 +22,9 @@ INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `foll
 Add the vendors to the `token_vendors` SQL table:
 
 ```
-INSERT INTO `token_vendors` (`token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES ('Forging', 93, 922, 0, 0);
-INSERT INTO `token_vendors` (`token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES ('Crafting', 93, 144, 0, 0);
-INSERT INTO `token_vendors` (`token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES ('Alchemy', 93, 228, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (484, 'Forging', 93, 922, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (485, 'Crafting', 93, 144, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (486, 'Alchemy', 93, 228, 0, 0);
 ```
 
 ### Adding the abilities
