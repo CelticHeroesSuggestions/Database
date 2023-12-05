@@ -19,12 +19,32 @@ DELETE FROM `mob_templates` WHERE `mob_template_id`=228;
 INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (228, 'Cauldron', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 737, 0, 0, 0, 0, '', 0.3, 5, 4, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
 ```
 
+Spawn the mobs:
+```
+# Forge Farcrag
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20500;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20500, 93, 15, 5.22, -111, 122, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Forge Shalemont
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20501;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20501, 6, 15, 196.48, 0, 115.23, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Forge Stonevale
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20502;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20502, 3, 15, 30.93, 0, -19.38, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+
+```
+
 Add the vendors to the `token_vendors` SQL table:
 
 ```
-INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (484, 'Forging', 93, 922, 0, 0);
-INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (485, 'Crafting', 93, 144, 0, 0);
-INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (486, 'Alchemy', 93, 228, 0, 0);
+DELETE FROM `token_vendors` WHERE `token_vendor_id` >= 484 AND `token_vendor_id` <= 491;
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (484, 'Crafting', 93, 144, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (485, 'Alchemy', 93, 228, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (486, 'Forging Farcrag', 93, 922, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (487, 'Forging Shalemont', 6, 922, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (488, 'Forging Stonevale', 3, 922, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (489, 'Forging Otherworld', 7, 922, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (490, 'Forging Carrowmore', 10, 922, 0, 0);
+INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (491, 'Forging Tower', 15, 922, 0, 0);
 ```
 
 ### Adding the abilities
@@ -129,18 +149,18 @@ Add the items to the `token_vendor_stock` SQL table:
 ```
 DELETE FROM token_vendor_stock WHERE (token_vendor_cost_id >= 910 AND token_vendor_cost_id <= 925);
 # connacht armor/shield
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17608, 910);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17609, 911);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17610, 912);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17611, 913);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17612, 914);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17613, 915);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17614, 916);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17615, 917);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17616, 918);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17617, 919);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17618, 920);
-INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17619, 921);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (486, 17608, 910);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (486, 17609, 911);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (487, 17610, 912);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (487, 17611, 913);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (488, 17612, 914);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (488, 17613, 915);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (489, 17614, 916);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (489, 17615, 917);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (490, 17616, 918);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (490, 17617, 919);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (491, 17618, 920);
+INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (491, 17619, 921);
 INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17620, 922);
 INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17621, 923);
 INSERT INTO token_vendor_stock (token_vendor_id, item_template_id, token_vendor_cost_id) VALUES (221, 17622, 924);
