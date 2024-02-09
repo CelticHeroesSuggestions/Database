@@ -26,7 +26,7 @@ DELETE FROM `spawn_points` WHERE `spawn_point_id`=20500;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20500, 93, 15, 5.22, -111, 122, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
 # Forge Shalemont
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20501;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20501, 6, 15, 196.48, 0, 115.23, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20501, 6, 15, 53, 0, 6.75, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
 # Forge Stonevale
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20502;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20502, 3, 15, 30.93, 0, -19.38, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
