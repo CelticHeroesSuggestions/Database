@@ -31,6 +31,37 @@ INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `positi
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20502;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20502, 3, 15, 30.93, 0, -19.38, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
 
+# Crafting Table Crookback
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20503;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20503, 4, 15, 92.8, -10, -68, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Fingals
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20504;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20504, 6, 15, 53, 0, 6.75, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Sewers
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20505;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20505, 3, 15, 30.93, 0, -19.38, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20506;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20506, 10, 15, 30.93, 0, -19.38, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Gardens
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20507;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20507, 24, 15, 30.93, 0, -19.38, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+
+# Cauldron Dustwither
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20503;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20508, 5, 15, 5.22, -111, 122, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Tavern
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20504;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20509, 9, 15, 53, 0, 6.75, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Otherworld
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20505;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20510, 7, 15, 30.93, 0, -19.38, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20506;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20511, 10, 15, 30.93, 0, -19.38, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Gardens
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20507;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20512, 24, 15, 30.93, 0, -19.38, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 ```
 
 Add the vendors to the `token_vendors` SQL table:
@@ -58,6 +89,15 @@ INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, 
 ### Adding the abilities
 
 Add the mob to mob_list.txt, copy from Oven mob.
+
+```
+144,258,0.3,Workbench,0,0,1,-1,20,0,0.9,1.7,0,-5,2
+...
+228,258,0.3,Cauldron,0,0,1,-1,20,0,0.9,1.7,0,-5,2
+...
+922,258,0.3,Forge,0,0,1,-1,20,0,0.9,1.7,0,-5,2
+```
+
 Copy the cv_cooking_station_npc.txt conversation to cv_forging_station_npc.txt, change the content to be forging themed, use `FORGING` instead of `COOKING` and maybe remove the quest.
 Add the conversation to the conversation_lookup.txt
 Spawn the forge mob near blacksmith in castle.
@@ -82,6 +122,10 @@ Add the forging abilities to the server CraftingType enum.
 Patch the conversation_lookup.txt, mob_list.txt, conversation_lookup.txt, ability_list.txt.
 
 ### Adding recipes
+
+To parse a CSV file from a spreadsheet, see `generate_recipes.py`.
+
+To add recipes manually:
 
 Add recipes to the `recipes` table in SQL, can overwrite some DNU ones, for example `71-86`. The below adds recipes for connacht armor
 ```
