@@ -96,6 +96,87 @@ INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, 
 INSERT INTO `token_vendors` (`token_vendor_id`, `token_vendor_name`, `zone_id`, `npc_id`, `faction_id`, `faction_level`) VALUES (499, 'Forging Tower', 15, 922, 0, 0);
 ```
 
+Add sand on ground for pickup.
+
+```
+# Lir's Sand
+DELETE FROM `item_spawns` WHERE `item_spawn_id` >= 7000 and `item_spawn_id` <= 7009;
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7000, 2, 30, 242, 0, 56, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7001, 2, 30, 257, 0, 52, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7002, 2, 30, 268.5, 0, 41, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7003, 2, 30, 282.5, 0, 32.5, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7004, 2, 30, 294, 0, 17.5, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7005, 2, 30, 265, 0, -196.5, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7006, 2, 30, 275, 0, -195, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7007, 2, 30, 275.1, 0, -186.3, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7008, 2, 30, 273, 0, -177, '17075,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7009, 2, 30, 276, 0, -165.5, '17075,100', 30);
+
+# Stonevale Sand
+DELETE FROM `item_spawns` WHERE `item_spawn_id` >= 7010 and `item_spawn_id` <= 7019;
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7010, 3, 30, 163, 0, 36.5, '17076,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7011, 3, 30, 155, 0, 36.2, '17076,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7012, 3, 30, 115, 0, 33.6, '17076,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7013, 3, 30, 147, 0, 37.8, '17076,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7014, 3, 30, 138, 0, 32.78, '17076,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7015, 3, 30, 134.2, 0, 37.6, '17076,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7016, 3, 30, 126.5, 0, 33.4, '17076,100', 30);
+
+# Cave Sand
+DELETE FROM `item_spawns` WHERE `item_spawn_id` >= 7020 and `item_spawn_id` <= 7029;
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7020, 11, 30, 930.5, 0, 267.5, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7021, 11, 30, 940.5, 0, 267, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7022, 11, 30, 927.9, 0, 257.9, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7023, 11, 30, 919.5, 0, 220, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7024, 11, 30, 923.8, 0, 208, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7025, 11, 30, 905.5, 0, 208, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7026, 11, 30, 997.5, 0, 235, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7027, 11, 30, 982.1, 0, 234.7, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7028, 11, 30, 980.5, 0, 241.5, '17077,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7029, 11, 30, 1013, 0, 241, '17077,100', 30);
+
+# Otherworld Sand
+DELETE FROM `item_spawns` WHERE `item_spawn_id` >= 7030 and `item_spawn_id` <= 7054;
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7030, 7, 30, -246, 0, 44.66, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7031, 7, 30, -237.7, 0, 47.38, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7032, 7, 30, -202.72, 0, 43.80, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7033, 7, 30, -202.3, 0, 27.14, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7034, 7, 30, -193.66, 0, 10.88, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7035, 7, 30, -177, 0, 2.9, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7036, 7, 30, -173.74, 0, -15.81, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7037, 7, 30, -149.76, 0, -9.65, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7038, 7, 30, -154.82, 0, 5.63, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7039, 7, 30, -160.5, 0, 24.8, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7040, 7, 30, -158.5, 0, 46.58, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7041, 7, 30, -176.69, 0, 44.57, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7042, 7, 30, -193.7, 0, 44.2, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7043, 7, 30, -136.2, 0, 16.37, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7044, 7, 30, -126.7, 0, 25.35, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7045, 7, 30, -103.8, 0, 24.14, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7046, 7, 30, -108, 0, 7.12, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7047, 7, 30, -89.31, 0, 2.03, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7048, 7, 30, -71.5, 0, -2.96, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7049, 7, 30, -56.83, 0, -8.3, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7050, 7, 30, -54.76, 0, 15.11, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7051, 7, 30, -24.99, 0, -13.35, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7052, 7, 30, -11.32, 0, 25.23, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7053, 7, 30, -1.53, 0, -46.44, '17078,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7054, 7, 30, -15.22, 0, -29.14, '17078,100', 30);
+```
+
+Add the sand to the item list on the database
+
+```
+DELETE FROM `item_templates` WHERE `item_id`=17075;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17075, 'Lirs Sand', b'1', 0, -1, 0, 0, 0, 0, 0, b'0', '', '', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+DELETE FROM `item_templates` WHERE `item_id`=17076;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17076, 'Stonevale Sand', b'1', 0, -1, 0, 0, 0, 0, 0, b'0', '', '', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+DELETE FROM `item_templates` WHERE `item_id`=17077;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17077, 'Cave Sand', b'1', 0, -1, 0, 0, 0, 0, 0, b'0', '', '', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+DELETE FROM `item_templates` WHERE `item_id`=17078;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17078, 'Otherworld Sand', b'1', 0, -1, 0, 0, 0, 0, 0, b'0', '', '', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+```
+
 ### Adding the abilities
 
 Add the mob to mob_list.txt, copy from Oven mob.
