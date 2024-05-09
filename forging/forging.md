@@ -12,11 +12,11 @@ INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `foll
 
 # Crafting, replace ID 144
 DELETE FROM `mob_templates` WHERE `mob_template_id`=144;
-INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (144, 'Workbench', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 1009, 0, 0, 0, 0, '', 0.3, 5, 4, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (144, 'Workbench', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 1009, 0, 0, 0, 0, '', 0.3, 5, 1, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
 
 # Alchemy, replace ID 228
 DELETE FROM `mob_templates` WHERE `mob_template_id`=228;
-INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (228, 'Cauldron', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 1010, 0, 0, 0, 0, '', 0.3, 5, 4, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (228, 'Cauldron', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 1010, 0, 0, 0, 0, '', 0.3, 5, 1, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
 ```
 
 Add the conversations to the `conversation_lookup.txt` file
@@ -59,16 +59,16 @@ INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `positi
 
 # Cauldron Dustwither
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20508;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20508, 5, 15, 5.22, -111, 122, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20508, 5, 15, 1.58, 0, -65.8, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 # Cauldron Tavern
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20509;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20509, 9, 15, 53, 0, 6.75, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20509, 9, 15, -11.51, 0, 32.28, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 # Cauldron Otherworld
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20510;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20510, 7, 15, 30.93, 0, -19.38, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20510, 7, 15, 290.46, 0, -231.5, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 # Cauldron Carrowmore
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20511;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20511, 10, 15, 30.93, 0, -19.38, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20511, 10, 15, 238.3, 0, 825.73, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 # Cauldron Gardens
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20512;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20512, 24, 15, -66, 0, 43.29, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
