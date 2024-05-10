@@ -40,38 +40,50 @@ INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `positi
 # Forge Stonevale
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20502;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20502, 3, 15, 30.93, 0, -19.38, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Forge Otherworld
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20503;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20503, 7, 15, 30.93, 0, -19.38, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Forge Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20504;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20504, 10, 15, -28.65, 0, -35.95, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Forge Tower
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20505;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20505, 15, 15, -226.28, 27, 41.6, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
 
 # Crafting Table Crookback
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20503;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20503, 4, 15, 92.8, -10, -68, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
-# Crafting Table Fingals
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20504;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20504, 11, 15, 836.5, 0, 331.5, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
-# Crafting Table Sewers
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20505;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20505, 12, 15, 5.3, 0, 399, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
-# Crafting Table Carrowmore
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20506;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20506, 10, 15, -355, 0, 469, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
-# Crafting Table Gardens
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20506, 4, 15, 92.8, -10, -68, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Dustwither
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20507;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20507, 24, 15, 30.93, 0, -19.38, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20507, 5, 15, 92.8, -10, -68, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Fingals
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20508;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20508, 11, 15, 836.5, 0, 331.5, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Sewers
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20509;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20509, 12, 15, 5.3, 0, 399, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20510;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20510, 10, 15, -355, 0, 469, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Table Gardens
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20511;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20511, 24, 15, 89.6, 0, 62.96, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
 
 # Cauldron Dustwither
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20508;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20508, 5, 15, 1.58, 0, -65.8, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
-# Cauldron Tavern
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20509;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20509, 9, 15, -11.51, 0, 32.28, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
-# Cauldron Otherworld
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20510;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20510, 7, 15, 290.46, 0, -231.5, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
-# Cauldron Carrowmore
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20511;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20511, 10, 15, 238.3, 0, 825.73, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
-# Cauldron Gardens
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20512;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20512, 24, 15, -66, 0, 43.29, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20512, 5, 15, 1.58, 0, -65.8, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Tavern
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20513;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20513, 9, 15, -11.51, 0, 32.28, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Otherworld
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20514;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20514, 7, 15, 290.46, 0, -231.5, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20515;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20515, 10, 15, 238.3, 0, 825.73, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Cauldron Gardens
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20516;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20516, 24, 15, -65.74, 0, 43.18, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 ```
 
 Add the vendors to the `token_vendors` SQL table:
