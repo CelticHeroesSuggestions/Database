@@ -44,10 +44,10 @@ Add the mobs to mob_data.txt:
 70070,76,0.3,[Master Craftsman] Pak the Curious,1000,3,1,-1,20,0,1,1.8,0,0,1
 
 269,76,0.3,[Master Alchemist] Sawyer the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
-70084,76,0.3,[Master Alchemist] Ken the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
+70084,76,0.3,[Master Alchemist] Iggy the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
 70103,76,0.3,[Master Alchemist] Aiden the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
 70104,76,0.3,[Master Alchemist] Tron the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
-70105,76,0.3,[Master Alchemist] Wavie the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
+70105,76,0.3,[Master Alchemist] Era the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
 
 70980,76,0.3,[Master Blacksmith] Nyna the Blacksmith,1000,3,1,-1,20,0,1,1.8,0,0,1
 70981,76,0.3,[Master Blacksmith] Toothy the Blacksmith,1000,3,1,-1,20,0,1,1.8,0,0,1
@@ -108,21 +108,39 @@ Spawn the mobs:
 # Forge Farcrag
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20500;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20500, 93, 15, 5.22, -111, 122, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Blacksmith Farcrag
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20600;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20600, 93, 15, 5.22, -111, 122, 'stand', '70980,1', 1, 0, 20, 0, 0, 0);
 # Forge Shalemont
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20501;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20501, 6, 15, 53, 0, 6.75, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Blacksmith Shalemont
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20601;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20601, 6, 15, 53, 0, 6.75, 'stand', '70981,1', 1, 0, 20, 0, 0, 0);
 # Forge Stonevale
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20502;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20502, 3, 15, 30.93, 0, -19.38, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Blacksmith Stonevale
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20602;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20602, 3, 15, 30.93, 0, -19.38, 'stand', '70982,1', 1, 0, 20, 0, 0, 0);
 # Forge Otherworld
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20503;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20503, 7, 15, 30.93, 0, -19.38, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Blacksmith Otherworld
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20603;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (603, 7, 15, 30.93, 0, -19.38, 'stand', '70984,1', 1, 0, 20, 0, 0, 0);
 # Forge Carrowmore
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20504;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20504, 10, 15, -28.65, 0, -35.95, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Blacksmith Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20604;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20604, 10, 15, -28.65, 0, -35.95, 'stand', '70984,1', 1, 0, 20, 0, 0, 0);
 # Forge Tower
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20505;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20505, 15, 15, -226.28, 27, 41.6, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+# Blacksmith Tower
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20605;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20605, 15, 15, -226.28, 27, 41.6, 'stand', '70983,1', 1, 0, 20, 0, 0, 0);
 
 # Crafting Table Crookback
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20506;
@@ -160,19 +178,31 @@ DELETE FROM `spawn_points` WHERE `spawn_point_id`=20512;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20512, 5, 15, 1.58, 0, -65.8, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 # Alchemist Dustwither
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20612;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20612, 5, 15, 1.58, 0, -65.8, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20612, 5, 15, -.83, 0, -65.77, 'stand', '70084,1', 1, 40, 20, 0, 0, 0);
 # Cauldron Tavern
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20513;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20513, 9, 15, -1, 0, -66.18, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Alchemist Tavern
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20613;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20613, 9, 15, -12.09, 0, -29.98, 'stand', '269,1', 1, 135, 20, 0, 0, 0);
 # Cauldron Otherworld
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20514;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20514, 7, 15, 290.46, 0, -231.5, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Alchemist Otherworld
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20614;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20614, 7, 15, 293.41, 0, -230.62, 'stand', '70105,1', 1, 210, 20, 0, 0, 0);
 # Cauldron Carrowmore
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20515;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20515, 10, 15, 238.3, 0, 825.73, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20515, 10, 15, 238.3, 0, 825.73, 'stand', '228,1', 1, 210, 20, 0, 0, 0);
+# Alchemist Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20615;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20615, 10, 15, 240.3, 0, 825.98, 'stand', '70103,1', 1, 210, 20, 0, 0, 0);
 # Cauldron Gardens
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20516;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20516, 24, 15, -65.74, 0, 43.18, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Alchemist Gardens
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20616;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20616, 24, 15, -66.99, 0, 44.82, 'stand', '70104,1', 1, 170, 20, 0, 0, 0);
 ```
 
 Add the vendors to the `token_vendors` SQL table:
