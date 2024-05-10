@@ -27,6 +27,80 @@ conv 737 cv_forging_station_npc
 ...
 conv 1009 cv_crafting_station_npc
 conv 1010 cv_alchemy_station_npc
+conv 1011 cv_crafting_master
+conv 1012 cv_forging_master
+conv 1013 cv_alchemy_master
+```
+
+Add the mobs to mob_data.txt:
+```
+...
+228,258,0.3,Cauldron,0,0,1,-1,20,0,0.9,1.7,0,-5,2
+
+229,131,0.3,[Master Craftswoman] Haileigh the Acute,1000,3,1,-1,20,0,1,1.8,0,0,1
+230,76,0.3,[Master Craftsman] Leif the Inventor,1000,3,1,-1,20,0,1,1.8,0,0,1
+267,76,0.3,[Master Craftsman] Bob the Builder,1000,3,1,-1,20,0,1,1.8,0,0,1
+10011,76,0.3,[Master Craftsman] Daniel the Crafty,1000,3,1,-1,20,0,1,1.8,0,0,1
+70070,76,0.3,[Master Craftsman] Pak the Curious,1000,3,1,-1,20,0,1,1.8,0,0,1
+
+269,76,0.3,[Master Alchemist] Sawyer the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
+70084,76,0.3,[Master Alchemist] Ken the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
+70103,76,0.3,[Master Alchemist] Aiden the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
+70104,76,0.3,[Master Alchemist] Tron the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
+70105,76,0.3,[Master Alchemist] Wavie the Alchemist,1000,3,1,-1,20,0,1,1.8,0,0,1
+
+70980,76,0.3,[Master Blacksmith] Nyna the Blacksmith,1000,3,1,-1,20,0,1,1.8,0,0,1
+70981,76,0.3,[Master Blacksmith] Toothy the Blacksmith,1000,3,1,-1,20,0,1,1.8,0,0,1
+70982,76,0.3,[Master Blacksmith] Shaem the Blacksmith,1000,3,1,-1,20,0,1,1.8,0,0,1
+70983,76,0.3,[Master Blacksmith] The Honoured One,1000,3,1,-1,20,0,1,1.8,0,0,1
+70984,76,0.3,[Master Blacksmith] Ernie the Blacksmith,1000,3,1,-1,20,0,1,1.8,0,0,1
+70984,76,0.3,[Master Blacksmith] Furyion the Blacksmith,1000,3,1,-1,20,0,1,1.8,0,0,1
+```
+
+Add the mobs to the database:
+```
+# Cauldron
+DELETE FROM `mob_templates` WHERE `mob_template_id`=228;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (228, 'Cauldron', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 1010, 0, 0, 0, 0, '', 0.3, 5, 1, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+
+# Craftsmen
+DELETE FROM `mob_templates` WHERE `mob_template_id`=229;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (229, '[Master Craftswoman] Haileigh the Acute', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1011, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=230;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (230, '[Master Craftsman] Leif the Inventor', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1011, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=267;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (267, '[Master Craftsman] Bob the Builder', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1011, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (10011, '[Master Craftsman] Daniel the Crafty', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1011, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70070;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70070, '[Master Craftsman] Pak the Curious', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1011, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+
+# alchemists
+DELETE FROM `mob_templates` WHERE `mob_template_id`=269;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (269, '[Master Alchemist] Sawyer the Alchemist', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70084;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70084, '[Master Alchemist] Iggy the Alchemist', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70103;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70103, '[Master Alchemist] Aiden the Alchemist', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70104;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70104, '[Master Alchemist] Tron the Alchemist', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70105;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70105, '[Master Alchemist] Era the Alchemist', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+
+# blacksmiths
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70980;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70980, '[Master Blacksmith] Nyna the Blacksmith', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70981;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70981, '[Master Blacksmith] Toothy the Blacksmith', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70982;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70982, '[Master Blacksmith] Shaem the Blacksmith', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70983;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70983, '[Master Blacksmith] The Honoured One', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70984;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70984, '[Master Blacksmith] Ernie the Blacksmith', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70985;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70985, '[Master Blacksmith] Furyion the Blacksmith', 0, 40, 0, 51, 0, 100, '', 0, 0, NULL, 1013, 100, 100, 1000, 100, '', 0.3, 100, 1, '', '', 0, 1, 20, 0, 0, 0, 100, 1, '', b'0', '', 0, '', '7,1.00', b'0', 0);
+
+
 ```
 
 Spawn the mobs:
@@ -52,29 +126,44 @@ INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `positi
 
 # Crafting Table Crookback
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20506;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20506, 4, 15, 92.8, -10, -68, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
-# Crafting Table Dustwither
-DELETE FROM `spawn_points` WHERE `spawn_point_id`=20507;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20507, 5, 15, 92.8, -10, -68, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20506, 4, 15, 92.8, -10, -68, 'stand', '144,1', 1, 0, 20, 0, 0, 0);\
+# Crafting Master Crookback
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20606;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20606, 4, 15, 89.78, -10, -68.57, 'stand', '229,1', 1, 40, 20, 0, 0, 0);
 # Crafting Table Fingals
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20508;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20508, 11, 15, 836.5, 0, 331.5, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20508, 11, 15, 836.86, 0, 329.22, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Master Fingals
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20608;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20608, 11, 15, 836.5, 0, 331.5, 'stand', '230,1', 1, 168, 20, 0, 0, 0);
 # Crafting Table Sewers
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20509;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20509, 12, 15, 5.3, 0, 399, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Master Sewers
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20609;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20609, 12, 15, 2.76, 0, 399.6, 'stand', '70070,1', 1, 170, 10, 0, 0, 0);
 # Crafting Table Carrowmore
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20510;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20510, 10, 15, -355, 0, 469, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Master Carrowmore
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20610;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20610, 10, 15, -353.5, 0, 472, 'stand', '267,1', 1, 45, 20, 0, 0, 0);
 # Crafting Table Gardens
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20511;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20511, 24, 15, 89.6, 0, 62.96, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20511, 24, 15, -89.6, 65, 62.96, 'stand', '144,1', 1, 0, 20, 0, 0, 0);
+# Crafting Master Gardens
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20611;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20611, 25, 15, -90.6, 65, 60.47, 'stand', '10011,1', 1, 85, 20, 0, 0, 0);
 
 # Cauldron Dustwither
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20512;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20512, 5, 15, 1.58, 0, -65.8, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+# Alchemist Dustwither
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=20612;
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20612, 5, 15, 1.58, 0, -65.8, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 # Cauldron Tavern
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20513;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20513, 9, 15, -11.51, 0, 32.28, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20513, 9, 15, -1, 0, -66.18, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
 # Cauldron Otherworld
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20514;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20514, 7, 15, 290.46, 0, -231.5, 'stand', '228,1', 1, 0, 20, 0, 0, 0);
