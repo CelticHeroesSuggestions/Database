@@ -17,6 +17,11 @@ INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `foll
 # Alchemy, replace ID 228
 DELETE FROM `mob_templates` WHERE `mob_template_id`=228;
 INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (228, 'Cauldron', 0, 0, 3, 51, 0, 200, '', 0, 0, NULL, 1010, 0, 0, 0, 0, '', 0.3, 5, 1, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+
+# Alchemist trainer
+DELETE FROM `mob_templates` WHERE `mob_template_id`=140771;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (140771, 'Charlotte the Alchemist', 0, 0, 1, 51, 0, 100, '', 0, 0, NULL, 1014, 0, 0, 0, 0, '', 0.3, 5, 1.15, '', '', 0, 1, 20, 0, 0, 0, 0, 1, '', b'0', '', 0, '', '', b'0', 0);
+
 ```
 
 Add the conversations to the `conversation_lookup.txt` file
@@ -30,6 +35,7 @@ conv 1010 cv_alchemy_station_npc
 conv 1011 cv_crafting_master
 conv 1012 cv_forging_master
 conv 1013 cv_alchemy_master
+conv 1014 cv_crafting_charlotte_alchemist
 ```
 
 Add the mobs to mob_data.txt:
