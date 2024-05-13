@@ -1,0 +1,83 @@
+<!-- Barbarian Diner -->
+
+<xml>
+
+<line>
+<lineTag>OPEN</lineTag>
+<lineText>Fine day, darling! Call me Charlotte, I run the alchemy operations for Lord MacLir. Adventurers travel the land in search of rare ingredients, and here we experiment to find novel creations!\n\nI can see the awe in your face, [race], have you tried your hand at alchemy?</lineText>
+<choice>
+<choiceOptions>[FS]</choiceOptions>
+<choiceText>Alchemy?</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>ALCHEMY_INFO</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>ALCHEMY_INFO</lineTag>
+<lineText>Yes! I used to be a mage in the vanguard against the Connacht, however these days I stick with mixing elixirs and feeding the stray dogs around Farcrag.\n\nI still remember a thing or two, would you like a learn the basics?</lineText>
+<choice>
+<choiceCondition>NOT_HAS_ABILITY 62</choiceCondition>
+<choiceCondition>HAS_COINS 100</choiceCondition>
+<choiceOptions>[T]</choiceOptions>
+<choiceText>Learn Alchemy! (100 Gold)</choiceText>
+<choiceAction>LEARN_ABILITY 62 100</choiceAction>
+<choiceGoto>ALCHEMY_PURCHASE</choiceGoto>
+</choice>
+<choice>
+<choiceCondition>HAS_ABILITY 62</choiceCondition>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>I need a recap.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>ALCHEMY_HOWTO</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[N]</choiceOptions>
+<choiceText>No thanks.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>ALCHEMY_PURCHASE</lineTag>
+<lineText>Throw in just a pinch. Oh no, not that much... Oh dear, this was supposed to be green. Try adding some mugwort? No no, diced not shredded. Well we tried, right? I think you have the hang of it.\n\nMy philosophy is to always experiment and try new things. What's the worse that could happen?</lineText>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Where can I practice?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>ALCHEMY_HOWTO</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>ALCHEMY_HOWTO</lineTag>
+<lineText>You can practice on any cauldron, and you will find alchemists throughout Dal Riata eager to share their knowledge. They are always looking for victims, err, students to test their new cocktails. The cauldron also plays a role, its surrounding area affects which recipes can be made from it. Just find a cauldron, approach it, and start experimenting!\n\nMany alchemy reagents drop from the flora and fauna, or use containers forged in great furnaces. Good luck, [class], and may Cerridwen grant you wisdom.</lineText>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText>Thanks!</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN</choiceGoto>
+</choice>
+</line>
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
+
+</xml>
