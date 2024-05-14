@@ -27,6 +27,18 @@ DELETE FROM `item_templates` WHERE `item_id`=17095;
 INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17095, 'Penitent Skirt', b'0', 5, 3, 20, 20, 1, 0, 0, b'0', '', '12^80;13^80', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
 DELETE FROM `item_templates` WHERE `item_id`=17096;
 INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17096, 'Penitent Robe', b'0', 6, 2, 20, 20, 1, 0, 0, b'0', '', '12^90;13^90', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+
+# Zealot (green)
+DELETE FROM `item_templates` WHERE `item_id`=17345;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17345, 'Zealot Gloves', b'0', 5, 6, 20, 20, 1, 0, 0, b'0', '', '12^100;13^100', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+DELETE FROM `item_templates` WHERE `item_id`=17346;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17346, 'Zealot Shoes', b'0', 8, 4, 20, 20, 1, 0, 0, b'0', '', '12^110;13^110', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+DELETE FROM `item_templates` WHERE `item_id`=17347;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17347, 'Zealot Hood', b'0', 11, 1, 20, 20, 1, 0, 0, b'0', '', '12^120;13^120', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+DELETE FROM `item_templates` WHERE `item_id`=17348;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17348, 'Zealot Skirt', b'0', 14, 3, 20, 20, 1, 0, 0, b'0', '', '12^130;13^130', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
+DELETE FROM `item_templates` WHERE `item_id`=17349;
+INSERT INTO `item_templates` (`item_id`, `item_name`, `stackable`, `armour`, `equipment_slot`, `buy_price`, `sell_price`, `weight`, `attack_speed`, `item_sub_type`, `no_trade`, `damage_list`, `bonus_list`, `requirement_list`, `class_requirement_list`, `skill_id`, `skill_level`, `attack_range`, `missile_speed`, `report_back_time_male`, `report_back_time_female`, `blocks_slots`, `proc_skill_id`, `proc_skill_level`, `proc_skill_chance`, `equip_skill_id`, `equip_skill_level`, `unique_id`, `bind_on_equip`, `stat_bonus`, `ability_bonus`, `skill_bonus`, `max_charges`, `destroy_on_no_charges`, `avoidance_bonuses`, `immunity_list`, `damage_reductions_list`) VALUES (17349, 'Zealot Robe', b'0', 17, 2, 20, 20, 1, 0, 0, b'0', '', '12^140;13^140', '', '', 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, b'0', '', '', '', 0, b'0', '', '', '');
 ```
 
 Add to item_list.txt:
@@ -37,11 +49,16 @@ Add to item_list.txt:
 17089|0|4|1|1|0|0|4821|244|-1|0|76||12^30;13^30|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
 17090|0|5|3|1|0|0|4823|244|-1|0|76||12^40;13^40|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
 17091|0|6|2|1|0|0|4817|243|-1|0|76||12^50;13^50|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
-17092|0|0|6|1|0|0|300|107|-1|0|76||12^50;13^50|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
-17093|0|0|4|1|0|0|500|106|-1|0|76||12^60;13^60|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
-17094|0|0|1|1|0|0|4816|2586|-1|0|76||12^70;13^70|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
-17095|0|0|3|1|0|0|4818|113|-1|0|76||12^80;13^80|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
-17096|0|0|2|1|0|0|4817|244|-1|0|76||12^90;13^90|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17092|0|2|6|1|0|0|300|107|-1|0|76||12^50;13^50|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17093|0|3|4|1|0|0|500|106|-1|0|76||12^60;13^60|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17094|0|4|1|1|0|0|4816|2586|-1|0|76||12^70;13^70|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17095|0|5|3|1|0|0|4818|113|-1|0|76||12^80;13^80|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17096|0|6|2|1|0|0|4817|244|-1|0|76||12^90;13^90|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17345|0|5|6|1|0|0|300|107|-1|0|76||12^100;13^100|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17346|0|8|4|1|0|0|500|106|-1|0|76||12^110;13^110|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17347|0|11|1|1|0|0|4816|2586|-1|0|76||12^120;13^120|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17348|0|14|3|1|0|0|4818|113|-1|0|76||12^130;13^130|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
+17349|0|17|2|1|0|0|4817|244|-1|0|76||12^140;13^140|||0|0|0|0|0|0|0|0|0|0|0|0|0|0|||||9999|0|-1|0|0|0|||
 ...
 ```
 
