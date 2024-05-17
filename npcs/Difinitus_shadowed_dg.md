@@ -184,11 +184,21 @@ VALUES (100006, 'Shadowed Doch Gul Wristguards of Myth', 0, 40, 6, 0, 0, 15, 0, 
 
 Add a new Mob (server):
 ```
+# Original:
 INSERT INTO ch_live_unitydatadb.mob_templates (mob_template_id, mob_name, aggro_range, follow_range, faction_id, opinion_base, level, hitpoints, loot_table, min_coins, max_coins, kills_per_level, conversation_id, attack, defence, attack_speed, energy, skill_list, radius, armour_value, model_scale, damage_list, resistance_list, mob_power, max_attack_range, mob_race, missile_speed, report_back_time, ai_template_id, xp, num_drops, perm_status_effects, blocks_attacks, avoidance_ratings, spot_hidden, immunity_list, damage_reductions_list, no_ability_test, mob_type)
 VALUES (200002, 'Difinitus', 0, 0, 1, 51, 0, 100, NULL, 0, 0, NULL, 1002, 0, 0, 0, 0, NULL, .3, 5, 1, NULL, NULL, 0, 1, 20, 0, 0, 0, 0, 1, NULL, 0, NULL, 0, NULL, '7,1.00', 0, 0);
 
 INSERT INTO ch_live_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
 VALUES (100002, 2, 20, 236.14, 5, -245.70, 'stand', '200002,1', 1, 200, 90, 0, 0, 0);
+
+
+# for Wardens:
+DELETE FROM `mob_templates` WHERE `mob_template_id`=70986;
+INSERT INTO `mob_templates` (`mob_template_id`, `mob_name`, `aggro_range`, `follow_range`, `faction_id`, `opinion_base`, `level`, `hitpoints`, `loot_table`, `min_coins`, `max_coins`, `kills_per_level`, `conversation_id`, `attack`, `defence`, `attack_speed`, `energy`, `skill_list`, `radius`, `armour_value`, `model_scale`, `damage_list`, `resistance_list`, `mob_power`, `max_attack_range`, `mob_race`, `missile_speed`, `report_back_time`, `ai_template_id`, `xp`, `num_drops`, `perm_status_effects`, `blocks_attacks`, `avoidance_ratings`, `spot_hidden`, `immunity_list`, `damage_reductions_list`, `no_ability_test`, `mob_type`) VALUES (70986, 'Difinitus', 0, 0, 1, 51, 0, 100, NULL, 0, 0, NULL, 1015, 0, 0, 0, 0, NULL, 0.3, 5, 3, NULL, NULL, 0, 1, 20, 0, 0, 0, 0, 1, NULL, b'0', NULL, 0, NULL, '7,1.00', b'0', 0);
+
+DELETE FROM `spawn_points` WHERE `spawn_point_id`=4989;
+INSERT INTO ch_unitydatadb.spawn_points (spawn_point_id, zone_id, respawn_time, position_x, position_y, position_z, patrol, monster_list, patrol_speed, init_y_angle, max_respawn_time, min_despawn_time, max_despawn_time, despawn)
+VALUES (4989, 22, 20, -287.58, 15, 343.17, 'stand', '70986,1', 1, 95, 90, 0, 0, 0);
 ```
 
 ```
