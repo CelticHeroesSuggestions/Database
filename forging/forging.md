@@ -130,10 +130,10 @@ DELETE FROM `spawn_points` WHERE `spawn_point_id`=20602;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20602, 3, 15, 34.82, 0, -19.08, 'stand', '70982,1', 1, 237, 20, 0, 0, 0);
 # Forge Otherworld
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20503;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20503, 7, 15, -612, 0, 138, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20503, 7, 15, -616.75, 0, 138, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
 # Blacksmith Otherworld
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20603;
-INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20603, 7, 15, -619.35, 0, 139.43, 'stand', '70985,1', 1, 165, 20, 0, 0, 0);
+INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20603, 7, 15, -619.35, 0, 137.25, 'stand', '70985,1', 1, 165, 20, 0, 0, 0);
 # Forge Carrowmore
 DELETE FROM `spawn_points` WHERE `spawn_point_id`=20504;
 INSERT INTO `spawn_points` (`spawn_point_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `patrol`, `monster_list`, `patrol_speed`, `init_y_angle`, `max_respawn_time`, `min_despawn_time`, `max_despawn_time`, `despawn`) VALUES (20504, 10, 15, -28.65, 0, -35.95, 'stand', '922,1', 1, 0, 20, 0, 0, 0);
