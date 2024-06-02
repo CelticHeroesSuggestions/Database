@@ -35,6 +35,8 @@ UPDATE ch_live_unitydatadb.quest_stage_templates SET completion_details = '35275
 UPDATE ch_live_unitydatadb.quest_stage_templates SET completion_details = '35275,150' WHERE quest_id = 334 AND stage_id = 1;
 UPDATE ch_live_unitydatadb.quest_stage_templates SET completion_details = '35275,250' WHERE quest_id = 335 AND stage_id = 0;
 UPDATE ch_live_unitydatadb.quest_stage_templates SET completion_details = '35275,250' WHERE quest_id = 335 AND stage_id = 1;
+UPDATE ch_live_unitydatadb.quest_stage_templates SET completion_details = '35275,500' WHERE quest_id = 336 AND stage_id = 0;
+UPDATE ch_live_unitydatadb.quest_stage_templates SET completion_details = '35275,500' WHERE quest_id = 336 AND stage_id = 1;
 
 # Red Present Spawns (Farcrag): see the `anniversary2013_hat_quest_partycrowns.md` file for spawning these items
 
