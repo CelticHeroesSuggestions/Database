@@ -271,8 +271,8 @@ INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7028, 11, 30, 980.5, 0, 241.5, '17077,100', 30);
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7029, 11, 30, 1013, 0, 241, '17077,100', 30);
 
-# Otherworld Sand
-DELETE FROM `item_spawns` WHERE `item_spawn_id` >= 7030 and `item_spawn_id` <= 7054;
+# Otherworld Sand and Dragon Eggs
+DELETE FROM `item_spawns` WHERE `item_spawn_id` >= 7030 and `item_spawn_id` <= 7070;
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7030, 7, 30, -246, 0, 44.66, '17078,100', 30);
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7031, 7, 30, -237.7, 0, 47.38, '17078,100', 30);
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7032, 7, 30, -202.72, 0, 43.80, '17078,100', 30);
@@ -298,6 +298,21 @@ INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7052, 7, 30, -11.32, 0, 25.23, '17078,100', 30);
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7053, 7, 30, -1.53, 0, -46.44, '17078,100', 30);
 INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7054, 7, 30, -15.22, 0, -29.14, '17078,100', 30);
+# Cobalt Dragon Eggs
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7055, 7, 30, -457, 0, 190, '58500,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7056, 7, 30, -419, 0, 174.3, '58500,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7057, 7, 30, -401, 0, 193.5, '58500,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7058, 7, 30, -383.3, 0, 194, '58500,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7059, 7, 30, -348, 0, 203.5, '58500,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7060, 7, 30, -321.4, 0, 181.11, '58500,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7061, 7, 30, -298.3, 0, 224.07, '58500,100', 30);
+# Sand Dragon Eggs
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7062, 7, 30, -240.6, 0, 38.83, '58501,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7063, 7, 30, -208.5, 0, 36.41, '58501,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7064, 7, 30, -188.96, 0, 40.83, '58501,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7065, 7, 30, -160.9, 0, 11.86, '58501,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7066, 7, 30, -134.11, 0, 32, '58501,100', 30);
+INSERT INTO `item_spawns` (`item_spawn_id`, `zone_id`, `respawn_time`, `position_x`, `position_y`, `position_z`, `item_list`, `max_respawn_time`) VALUES (7067, 7, 30, -88.34, 0, 11.05, '58501,100', 30);
 ```
 
 Add the crafting items to the database:
